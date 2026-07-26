@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "create_solar_panels_kb_as_delta",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "892eb929-2641-94ea-47d3-3b441fc2cb53"
+  }
+}
