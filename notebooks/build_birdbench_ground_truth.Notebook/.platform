@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Notebook",
-    "displayName": "Data management",
-    "description": "New notebook"
+    "displayName": "build_birdbench_ground_truth",
+    "description": "New notebookground truth file for all the Bird Bench databases"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "22b3fd12-0d7f-8933-45d4-b2f5bf0611fd"
+    "logicalId": "f1940b22-4248-a8e5-4d5c-a1fd74358848"
   }
 }

@@ -20,73 +20,11 @@
 # META   }
 # META }
 
-# CELL ********************
+# MARKDOWN ********************
 
-from pyspark.sql import functions as F
-import re
-
-base_path = "Files/db_large_exports"
-lakehouse_name = "birdbench"  # default lakehouse attached to this notebook
-
-# helper to make valid SQL identifiers
-def to_identifier(name: str):
-    # lowercase, replace non-alphanumeric with underscore, collapse repeats, trim underscores
-    cleaned = re.sub(r"[^a-zA-Z0-9]", "_", name.strip())
-    cleaned = re.sub(r"_+", "_", cleaned)
-    cleaned = cleaned.strip("_")
-    if not cleaned:
-        raise ValueError(f"Cannot convert '{name}' to a valid identifier")
-    return cleaned.lower()
-
-# list top-level folders under db_large_exports
-folders = [f.name for f in notebookutils.fs.ls(base_path) if f.isDir]
-
-print(f"Found folders: {folders}")
-
-for folder in folders:
-    schema_name = to_identifier(folder)
-    print(f"\n=== Processing folder '{folder}' as schema '{schema_name}' ===")
-
-    # create schema if not exists
-    spark.sql(f"CREATE SCHEMA IF NOT EXISTS `{lakehouse_name}`.`{schema_name}`")
-
-    folder_path = f"{base_path}/{folder}"
-    entries = notebookutils.fs.ls(folder_path)
-    csv_files = [e.name for e in entries if not e.isDir and e.name.lower().endswith(".csv")]
-
-    if not csv_files:
-        print(f"  No CSV files found in {folder_path}, skipping.")
-        continue
-
-    for csv_file in csv_files:
-        table_base = csv_file[:-4] if csv_file.lower().endswith(".csv") else csv_file
-        table_name = to_identifier(table_base)
-        print(f"  Creating table '{lakehouse_name}.{schema_name}.{table_name}' from file '{csv_file}'")
-
-        file_path = f"{folder_path}/{csv_file}"
-
-        df = (spark.read
-              .option("header", "true")
-              .option("inferSchema", "true")
-              .option("multiLine", "true")
-              .option("escape", "\"")
-              .csv(file_path))
-
-        # write as managed Delta table into the lakehouse
-        full_table_name = f"`{lakehouse_name}`.`{schema_name}`.`{table_name}`"
-        (df.write
-           .mode("overwrite")
-           .format("delta")
-           .saveAsTable(full_table_name))
-
-print("\nCompleted creating schemas and tables from CSV exports.")
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
+# ### Merge ground-truth files
+# 
+# New notebookground truth file for all the Bird Bench databases
 
 # CELL ********************
 
