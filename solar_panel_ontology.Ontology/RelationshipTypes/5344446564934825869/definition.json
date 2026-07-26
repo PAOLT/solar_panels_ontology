@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5344446564934825869",
+  "name": "maintenance_procedure_to_approver_technician",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "273388742516841"
+  },
+  "target": {
+    "entityTypeId": "151344123787957"
+  }
+}

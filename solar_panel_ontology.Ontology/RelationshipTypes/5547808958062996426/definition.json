@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5547808958062996426",
+  "name": "certification_to_certification_taken",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "112820561669958"
+  },
+  "target": {
+    "entityTypeId": "104754026884394"
+  }
+}

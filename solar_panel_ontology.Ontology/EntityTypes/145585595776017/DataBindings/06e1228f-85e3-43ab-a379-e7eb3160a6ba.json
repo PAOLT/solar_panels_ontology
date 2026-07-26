@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "06e1228f-85e3-43ab-a379-e7eb3160a6ba",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "amount",
+        "targetPropertyId": "5127954489893797113"
+      },
+      {
+        "sourceColumnName": "category",
+        "targetPropertyId": "5127954488544671817"
+      },
+      {
+        "sourceColumnName": "CURRENCY",
+        "targetPropertyId": "5127954491368836151"
+      },
+      {
+        "sourceColumnName": "DESCRIPTION",
+        "targetPropertyId": "5127954491138505584"
+      },
+      {
+        "sourceColumnName": "entry_ts",
+        "targetPropertyId": "5127954491136512151"
+      },
+      {
+        "sourceColumnName": "invoice_no",
+        "targetPropertyId": "5127954490777115184"
+      },
+      {
+        "sourceColumnName": "LinkedClient",
+        "targetPropertyId": "5127954490388782702"
+      },
+      {
+        "sourceColumnName": "LinkedContract",
+        "targetPropertyId": "5127954490127786961"
+      },
+      {
+        "sourceColumnName": "LinkedMFR",
+        "targetPropertyId": "5127954490273395694"
+      },
+      {
+        "sourceColumnName": "LinkedOrder",
+        "targetPropertyId": "5127954491755410129"
+      },
+      {
+        "sourceColumnName": "LinkedSite",
+        "targetPropertyId": "5127954489908624229"
+      },
+      {
+        "sourceColumnName": "PAYMENT_STATUS",
+        "targetPropertyId": "5127954488149975874"
+      },
+      {
+        "sourceColumnName": "transaction_date",
+        "targetPropertyId": "5127954489216704378"
+      },
+      {
+        "sourceColumnName": "TXN_TYPE",
+        "targetPropertyId": "5127954489329191380"
+      },
+      {
+        "sourceColumnName": "TxnRef",
+        "targetPropertyId": "5127954487891131703"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "financial_ledger",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2754567446890746658",
+  "name": "claims_to_work_orders",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "61418836450951"
+  },
+  "target": {
+    "entityTypeId": "145752151256458"
+  }
+}

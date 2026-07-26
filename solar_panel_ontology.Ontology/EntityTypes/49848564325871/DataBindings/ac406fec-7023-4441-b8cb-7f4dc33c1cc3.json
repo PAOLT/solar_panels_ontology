@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "ac406fec-7023-4441-b8cb-7f4dc33c1cc3",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "ASSET_STATUS",
+        "targetPropertyId": "5104318413381017738"
+      },
+      {
+        "sourceColumnName": "COMMISSION_DATE",
+        "targetPropertyId": "5104318413104111977"
+      },
+      {
+        "sourceColumnName": "COST",
+        "targetPropertyId": "5104318413937095557"
+      },
+      {
+        "sourceColumnName": "decommission_date",
+        "targetPropertyId": "5104318413593660303"
+      },
+      {
+        "sourceColumnName": "firmware_ver",
+        "targetPropertyId": "5104318413693775483"
+      },
+      {
+        "sourceColumnName": "geolocation",
+        "targetPropertyId": "5104318414147983981"
+      },
+      {
+        "sourceColumnName": "installDate",
+        "targetPropertyId": "5104318411073343748"
+      },
+      {
+        "sourceColumnName": "IP_ADDR",
+        "targetPropertyId": "5104318411633506501"
+      },
+      {
+        "sourceColumnName": "LAST_SERVICE",
+        "targetPropertyId": "5104318413408796276"
+      },
+      {
+        "sourceColumnName": "location_in_plant",
+        "targetPropertyId": "5104318414288563327"
+      },
+      {
+        "sourceColumnName": "ModelIdentifier",
+        "targetPropertyId": "5104318415001390227"
+      },
+      {
+        "sourceColumnName": "next_service_due",
+        "targetPropertyId": "5104318414738071675"
+      },
+      {
+        "sourceColumnName": "SerialNum",
+        "targetPropertyId": "5104318411773756484"
+      },
+      {
+        "sourceColumnName": "SiteLocation",
+        "targetPropertyId": "5104318411166908002"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "inverters",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

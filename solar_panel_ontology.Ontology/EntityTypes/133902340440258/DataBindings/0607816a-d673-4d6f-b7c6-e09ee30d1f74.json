@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "0607816a-d673-4d6f-b7c6-e09ee30d1f74",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "assetStatus",
+        "targetPropertyId": "5095816015231781089"
+      },
+      {
+        "sourceColumnName": "FIRMWARE",
+        "targetPropertyId": "5095816014483614031"
+      },
+      {
+        "sourceColumnName": "INSTALL_DATE",
+        "targetPropertyId": "5095816013581453345"
+      },
+      {
+        "sourceColumnName": "LAST_CALIBRATION",
+        "targetPropertyId": "5095816015731107696"
+      },
+      {
+        "sourceColumnName": "location_coordinates",
+        "targetPropertyId": "5095816013863300035"
+      },
+      {
+        "sourceColumnName": "LOG_INTERVAL_SEC",
+        "targetPropertyId": "5095816015561400703"
+      },
+      {
+        "sourceColumnName": "MakerCode",
+        "targetPropertyId": "5095816013121647366"
+      },
+      {
+        "sourceColumnName": "MODEL",
+        "targetPropertyId": "5095816012685004352"
+      },
+      {
+        "sourceColumnName": "next_calibration_due",
+        "targetPropertyId": "5095816014023579355"
+      },
+      {
+        "sourceColumnName": "plant_site_ref",
+        "targetPropertyId": "5095816012732671905"
+      },
+      {
+        "sourceColumnName": "protocol",
+        "targetPropertyId": "5095816015232989667"
+      },
+      {
+        "sourceColumnName": "PURCHASE_COST",
+        "targetPropertyId": "5095816015784577684"
+      },
+      {
+        "sourceColumnName": "serial_num",
+        "targetPropertyId": "5095816012379665970"
+      },
+      {
+        "sourceColumnName": "StationCode",
+        "targetPropertyId": "5095816015696480007"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "weather_stations",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

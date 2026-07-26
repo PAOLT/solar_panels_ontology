@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "86f661af-85b8-4202-8788-6221a69d7a5e",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "due_date",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "action_description",
+        "targetPropertyId": "2777317292970764774"
+      },
+      {
+        "sourceColumnName": "action_type",
+        "targetPropertyId": "2777317289079528189"
+      },
+      {
+        "sourceColumnName": "approver_ref",
+        "targetPropertyId": "2777317288964502888"
+      },
+      {
+        "sourceColumnName": "assigned_to_person",
+        "targetPropertyId": "2777317290757305280"
+      },
+      {
+        "sourceColumnName": "comments",
+        "targetPropertyId": "2777317288986187851"
+      },
+      {
+        "sourceColumnName": "completion_date",
+        "targetPropertyId": "2777317290918337015"
+      },
+      {
+        "sourceColumnName": "due_date",
+        "targetPropertyId": "2777317291318123920"
+      },
+      {
+        "sourceColumnName": "effectiveness_rating",
+        "targetPropertyId": "2777317289362132537"
+      },
+      {
+        "sourceColumnName": "estimated_cost_usd",
+        "targetPropertyId": "2777317291078520671"
+      },
+      {
+        "sourceColumnName": "priority_level",
+        "targetPropertyId": "2777317291287719799"
+      },
+      {
+        "sourceColumnName": "recurring_check_required",
+        "targetPropertyId": "2777317290565092469"
+      },
+      {
+        "sourceColumnName": "resources_required",
+        "targetPropertyId": "2777317291304223150"
+      },
+      {
+        "sourceColumnName": "status",
+        "targetPropertyId": "2777317292878361918"
+      },
+      {
+        "sourceColumnName": "verification_date",
+        "targetPropertyId": "2777317292187135125"
+      },
+      {
+        "sourceColumnName": "verification_method",
+        "targetPropertyId": "2777317289786186972"
+      },
+      {
+        "sourceColumnName": "verifier_name",
+        "targetPropertyId": "2777317292158820282"
+      },
+      {
+        "sourceColumnName": "incident_ref",
+        "targetPropertyId": "2761660625833182814"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "safetycorrectiveactions",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

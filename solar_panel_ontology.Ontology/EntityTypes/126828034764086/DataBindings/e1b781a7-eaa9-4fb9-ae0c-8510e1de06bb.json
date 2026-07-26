@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "e1b781a7-eaa9-4fb9-ae0c-8510e1de06bb",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "AttendeeNum",
+        "targetPropertyId": "5616595352528452656"
+      },
+      {
+        "sourceColumnName": "CourseRef",
+        "targetPropertyId": "5616595354703131786"
+      },
+      {
+        "sourceColumnName": "finalScore",
+        "targetPropertyId": "5616595354785383872"
+      },
+      {
+        "sourceColumnName": "RATING",
+        "targetPropertyId": "5616595353248707830"
+      },
+      {
+        "sourceColumnName": "registration_dt",
+        "targetPropertyId": "5616595353377702576"
+      },
+      {
+        "sourceColumnName": "STATUS",
+        "targetPropertyId": "5616595354531439440"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "session_attendance",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

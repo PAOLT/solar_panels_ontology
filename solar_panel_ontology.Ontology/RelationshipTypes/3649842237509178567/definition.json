@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3649842237509178567",
+  "name": "clients_to_ppa_contracts",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "193779065409751"
+  },
+  "target": {
+    "entityTypeId": "100299290210877"
+  }
+}

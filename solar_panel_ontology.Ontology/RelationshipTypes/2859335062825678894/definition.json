@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2859335062825678894",
+  "name": "assigned_technicians_to_work_orders",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "151344123787957"
+  },
+  "target": {
+    "entityTypeId": "145752151256458"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "6d67d991-e96f-4aaa-aa02-d7b68607bc36",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "cost_per_head",
+        "targetPropertyId": "5072771629912156372"
+      },
+      {
+        "sourceColumnName": "COURSE_CODE",
+        "targetPropertyId": "5072771666863663186"
+      },
+      {
+        "sourceColumnName": "courseName",
+        "targetPropertyId": "5072771666974216581"
+      },
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "5072771667396552626"
+      },
+      {
+        "sourceColumnName": "duration_hours",
+        "targetPropertyId": "5072771669512433407"
+      },
+      {
+        "sourceColumnName": "instructor",
+        "targetPropertyId": "5072771667110007662"
+      },
+      {
+        "sourceColumnName": "INSTRUCTOR_BIO",
+        "targetPropertyId": "5072771669595889230"
+      },
+      {
+        "sourceColumnName": "last_modified_ts",
+        "targetPropertyId": "5072771669819496878"
+      },
+      {
+        "sourceColumnName": "LOCATION",
+        "targetPropertyId": "5072771669524768454"
+      },
+      {
+        "sourceColumnName": "MAX_ATTENDEES",
+        "targetPropertyId": "5072771668788020341"
+      },
+      {
+        "sourceColumnName": "provider",
+        "targetPropertyId": "5072771667482389161"
+      },
+      {
+        "sourceColumnName": "SESSION_DATE",
+        "targetPropertyId": "5072771667661719527"
+      },
+      {
+        "sourceColumnName": "SessionTag",
+        "targetPropertyId": "5072771668226416088"
+      },
+      {
+        "sourceColumnName": "Ties_To_Cert",
+        "targetPropertyId": "5072771665922782612"
+      },
+      {
+        "sourceColumnName": "trainingType",
+        "targetPropertyId": "5072771667542179272"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "training_sessions",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

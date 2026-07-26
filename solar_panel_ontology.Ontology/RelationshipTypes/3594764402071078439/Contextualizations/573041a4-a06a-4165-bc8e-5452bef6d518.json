@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "573041a4-a06a-4165-bc8e-5452bef6d518",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "supplychainshipments",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "shipment_id",
+      "targetPropertyId": "5113286970533859383"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "manufacturer_ref",
+      "targetPropertyId": "5116347594554434437"
+    }
+  ]
+}

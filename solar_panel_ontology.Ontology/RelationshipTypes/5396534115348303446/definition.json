@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5396534115348303446",
+  "name": "work_orders_to_parts_usage",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "145752151256458"
+  },
+  "target": {
+    "entityTypeId": "50066939381131"
+  }
+}

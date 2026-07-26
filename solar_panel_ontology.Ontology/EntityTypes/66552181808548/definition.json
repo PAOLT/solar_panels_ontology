@@ -1,0 +1,105 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "66552181808548",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "panel_models",
+  "entityIdParts": [
+    "5092637572832309221"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5092637572868358070",
+      "name": "degyrrate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Annual power output degradation rate. Example: 0.36.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637571154577210",
+      "name": "effpct",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Percentage efficiency of energy conversion. Example: 20.86.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637572714529784",
+      "name": "makertag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Manufacturer of the solar panel. NULL means the encoder does not report status or data are missing. Possible values: Canadian Solar, JA Solar, JinkoSolar, Longi, Trina.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637572832309221",
+      "name": "modkey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for the solar panel model. Example: Model-102.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637572841841087",
+      "name": "nomoptempc",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Normal operating temperature range. Example: 45.7.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637572580888436",
+      "name": "pnlkind",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Type of solar panel technology used. Possible values: Bifacial, HJT, Mono-PERC, Poly-PERC, TOPCon.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637572147396415",
+      "name": "rated_w",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "REAL. Maximum power output in watts under standard test conditions. Possible values: 450.0, 500.0, 550.0, 600.0, 650.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5092637571859494489",
+      "name": "tempcoeff",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Temperature coefficient of power. NULL means the encoder does not report status or data are missing. Example: -0.389.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

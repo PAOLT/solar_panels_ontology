@@ -1,0 +1,171 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "49848564325871",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "inverters",
+  "entityIdParts": [
+    "5104318411773756484"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5104318413381017738",
+      "name": "ASSET_STATUS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current operational status of the inverter. Possible values: Failed, Maintenance, Operational.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318413104111977",
+      "name": "COMMISSION_DATE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the inverter was officially commissioned and began operation. Example: 2018/03/15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318413937095557",
+      "name": "COST",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The original purchase cost of the inverter unit. Example: $25,000.00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318413593660303",
+      "name": "decommission_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the inverter was taken out of service. NULL if operational. Possible values: 2023/01/20, 2023/05/15, 2023/10/10, 2023/11/01, 2024/03/20, 2024/05/10.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318413693775483",
+      "name": "firmware_ver",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current firmware version installed on the inverter. Example: fw-3.1.2.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318414147983981",
+      "name": "geolocation",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Stores the precise geographic coordinates (latitude and longitude) of an installed inverter.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318411073343748",
+      "name": "installDate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the inverter was physically installed. Example: 2018/03/10.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318411633506501",
+      "name": "IP_ADDR",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The IP address of the inverter on the local network. Example: 192.168.1.101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318413408796276",
+      "name": "LAST_SERVICE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date of the last maintenance service performed on the inverter. Example: 2024/01/15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318414288563327",
+      "name": "location_in_plant",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The specific physical location of the inverter within the plant. Example: Block A, Unit 1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318415001390227",
+      "name": "ModelIdentifier",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E inverter_models.InverterModelTag. The model of the inverter. Example: INV-M-A1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318414738071675",
+      "name": "next_service_due",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the next scheduled maintenance is due. Example: 2024/07/15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318411773756484",
+      "name": "SerialNum",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique serial number of an individual inverter unit. Example: INV-SN-A001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5104318411166908002",
+      "name": "SiteLocation",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E plants.sitekey. The plant where the inverter is installed. Example: SP9227.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

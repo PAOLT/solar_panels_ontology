@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "0a409586-4b86-423c-818b-2f4ff1d7a816",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "actual_start_ts",
+        "targetPropertyId": "5083449615225456819"
+      },
+      {
+        "sourceColumnName": "AssignedTechnician",
+        "targetPropertyId": "5083449612930230801"
+      },
+      {
+        "sourceColumnName": "COMPLETED_TIMESTAMP",
+        "targetPropertyId": "5083449615151333650"
+      },
+      {
+        "sourceColumnName": "costing",
+        "targetPropertyId": "5083449614555687412"
+      },
+      {
+        "sourceColumnName": "CREATED_TS",
+        "targetPropertyId": "5083449613083812314"
+      },
+      {
+        "sourceColumnName": "Creator",
+        "targetPropertyId": "5083449614379350486"
+      },
+      {
+        "sourceColumnName": "description",
+        "targetPropertyId": "5083449613530587714"
+      },
+      {
+        "sourceColumnName": "OrderNum",
+        "targetPropertyId": "5083449615180512387"
+      },
+      {
+        "sourceColumnName": "PlantRef",
+        "targetPropertyId": "5083449613593109065"
+      },
+      {
+        "sourceColumnName": "priority",
+        "targetPropertyId": "5083449612984759894"
+      },
+      {
+        "sourceColumnName": "resolution",
+        "targetPropertyId": "5083449615520163690"
+      },
+      {
+        "sourceColumnName": "ROOT_CAUSE",
+        "targetPropertyId": "5083449613723198194"
+      },
+      {
+        "sourceColumnName": "SCHEDULED_END",
+        "targetPropertyId": "5083449615366934625"
+      },
+      {
+        "sourceColumnName": "scheduled_start",
+        "targetPropertyId": "5083449612371274038"
+      },
+      {
+        "sourceColumnName": "STATUS",
+        "targetPropertyId": "5083449612499076664"
+      },
+      {
+        "sourceColumnName": "TITLE",
+        "targetPropertyId": "5083449613314423741"
+      },
+      {
+        "sourceColumnName": "TriggeringAlert",
+        "targetPropertyId": "5083449612927002273"
+      },
+      {
+        "sourceColumnName": "work_type",
+        "targetPropertyId": "5083449652351769431"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "work_orders",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

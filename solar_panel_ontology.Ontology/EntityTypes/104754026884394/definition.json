@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "104754026884394",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "technicians_certifications",
+  "entityIdParts": [
+    "5533271643346251781",
+    "5533271644429090023"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5533271644429090023",
+      "name": "CertificationRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "5533271645530755427",
+      "name": "EXPIRY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the certification expires. Example: 2021-04-15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5533271643673857347",
+      "name": "issue_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the certification was issued to the technician. Example: 2019-04-15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5533271643346251781",
+      "name": "TechnicianRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "5533271643662385533",
+      "name": "verification_path",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A URL or path to a document for verifying the certification. Example: /verify?cert=PVIP-1-T101.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

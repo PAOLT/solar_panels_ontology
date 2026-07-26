@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "3094480d-655e-450a-b2c0-0bf9ac73e668",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "plants",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "sitekey",
+      "targetPropertyId": "5109646062513636532"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "modhook",
+      "targetPropertyId": "5092637572832309221"
+    }
+  ]
+}

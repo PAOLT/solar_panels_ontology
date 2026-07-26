@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "1dd8e309-9d87-4be7-9a9e-4e9a2b48d738",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "update_timestamp",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "carrier_message",
+        "targetPropertyId": "2833801231074765518"
+      },
+      {
+        "sourceColumnName": "delay_reason",
+        "targetPropertyId": "2833801231273934457"
+      },
+      {
+        "sourceColumnName": "estimated_delivery_update",
+        "targetPropertyId": "2833801229842385704"
+      },
+      {
+        "sourceColumnName": "gps_lat",
+        "targetPropertyId": "2833801230150079395"
+      },
+      {
+        "sourceColumnName": "gps_lon",
+        "targetPropertyId": "2833801230261647754"
+      },
+      {
+        "sourceColumnName": "hub_facility_code",
+        "targetPropertyId": "2833801228710956230"
+      },
+      {
+        "sourceColumnName": "location_city",
+        "targetPropertyId": "2833801229941132233"
+      },
+      {
+        "sourceColumnName": "location_country",
+        "targetPropertyId": "2833801231308216031"
+      },
+      {
+        "sourceColumnName": "shock_g_force",
+        "targetPropertyId": "2833801232591793905"
+      },
+      {
+        "sourceColumnName": "signed_by",
+        "targetPropertyId": "2833801228898606727"
+      },
+      {
+        "sourceColumnName": "status_code",
+        "targetPropertyId": "2833801231271205099"
+      },
+      {
+        "sourceColumnName": "status_description",
+        "targetPropertyId": "2833801232203295579"
+      },
+      {
+        "sourceColumnName": "temperature_c",
+        "targetPropertyId": "2833801231344795676"
+      },
+      {
+        "sourceColumnName": "transport_mode",
+        "targetPropertyId": "2833801229400383583"
+      },
+      {
+        "sourceColumnName": "update_timestamp",
+        "targetPropertyId": "2833801229290308545"
+      },
+      {
+        "sourceColumnName": "vessel_flight_number",
+        "targetPropertyId": "2833801231272206116"
+      },
+      {
+        "sourceColumnName": "shipment_ref",
+        "targetPropertyId": "5113286970533859383"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "shipmenttrackingupdates",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

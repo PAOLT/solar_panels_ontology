@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2579034499201119024",
+  "name": "client_support_tickets_to_ticket_resolution_steps",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "64647664594075"
+  },
+  "target": {
+    "entityTypeId": "75309924523386"
+  }
+}

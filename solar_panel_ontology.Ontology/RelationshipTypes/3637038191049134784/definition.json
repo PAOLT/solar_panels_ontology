@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3637038191049134784",
+  "name": "financial_ledger_to_plants",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "145585595776017"
+  },
+  "target": {
+    "entityTypeId": "135991112405378"
+  }
+}

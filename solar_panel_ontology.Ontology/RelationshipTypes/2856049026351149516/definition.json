@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2856049026351149516",
+  "name": "panel_models_to_plants",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "66552181808548"
+  },
+  "target": {
+    "entityTypeId": "135991112405378"
+  }
+}

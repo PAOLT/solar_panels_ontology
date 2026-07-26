@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "0f2a6548-15e4-474d-afe3-4be0cf1de1b1",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "For_Contract_Num",
+        "targetPropertyId": "5119678498198161801"
+      },
+      {
+        "sourceColumnName": "is_active",
+        "targetPropertyId": "5119678501060412790"
+      },
+      {
+        "sourceColumnName": "PRICE_KWH",
+        "targetPropertyId": "5119678499621348753"
+      },
+      {
+        "sourceColumnName": "rateType",
+        "targetPropertyId": "5119678499943220685"
+      },
+      {
+        "sourceColumnName": "SEASON",
+        "targetPropertyId": "5119678501968923637"
+      },
+      {
+        "sourceColumnName": "TariffCode",
+        "targetPropertyId": "5119678499478650393"
+      },
+      {
+        "sourceColumnName": "time_period",
+        "targetPropertyId": "5119678499756154709"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "energy_tariffs",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

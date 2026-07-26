@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2633986236437826478",
+  "name": "inverter_models_to_inverters",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "58742036739527"
+  },
+  "target": {
+    "entityTypeId": "49848564325871"
+  }
+}

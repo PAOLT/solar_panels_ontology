@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "12880393099422",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "site_inventory",
+  "entityIdParts": [
+    "5089782044463250874",
+    "5089782045743349147"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5089782042799280068",
+      "name": "LAST_CHECKED",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the inventory level for this part was last physically checked. Example: 2024-05-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5089782043644414047",
+      "name": "last_restock",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the part was last restocked. Example: 2024-03-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5089782043778456832",
+      "name": "last_updated_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last update to this inventory record. Example: 2024-05-01 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5089782044463250874",
+      "name": "LocationTag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. PK \u0026 FK -\u003E plants.sitekey. The site where the inventory is located. Example: SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5089782045276750487",
+      "name": "quantity",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The current quantity of the part on hand at the site. Example: 155.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5089782045154380790",
+      "name": "REORDER_LEVEL",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The inventory level at which a new order for the part should be placed. Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5089782045743349147",
+      "name": "StockItemSKU",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. PK \u0026 FK -\u003E spare_parts.PartSKU. The SKU of the part in inventory. Example: SP-DI-001.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

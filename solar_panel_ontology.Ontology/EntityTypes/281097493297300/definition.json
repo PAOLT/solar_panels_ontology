@@ -1,0 +1,138 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "281097493297300",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "asset_manufacturers",
+  "entityIdParts": [
+    "5116347594554434437"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5116347594554434437",
+      "name": "MfrCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for an asset manufacturer or vendor. Example: MFR-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347592289516976",
+      "name": "contact_points",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Stores the various points of contact for a manufacturer, including sales, support, and warranty.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347593428512413",
+      "name": "COUNTRY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The country where the manufacturer is headquartered. Example: Israel.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347593542395987",
+      "name": "created_at",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the manufacturer record was created. Example: 01/01/2015 00:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347594006382024",
+      "name": "HQ_Address",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The full headquarters address of the manufacturer. Example: 1 HaMada Street Herzliya.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347592021835175",
+      "name": "LEGAL_NAME",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The full legal name of the manufacturing company. Example: SolarEdge Technologies Inc..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347594777176729",
+      "name": "mfr_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The common brand name of the manufacturer. Example: SolarEdge.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347595052820250",
+      "name": "StockSymbol",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The stock market ticker symbol if the company is publicly traded. Example: SEDG.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347595748431575",
+      "name": "UPDATED_AT",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the manufacturer record. Example: 04/20/2024 14:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347593539998734",
+      "name": "website_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The official website URL of the manufacturer. Example: https://solaredge.com.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5116347592133469880",
+      "name": "yearFounded",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The year the manufacturing company was founded. Example: 2006.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

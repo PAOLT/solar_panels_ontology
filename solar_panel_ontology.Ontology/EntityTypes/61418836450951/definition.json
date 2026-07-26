@@ -1,0 +1,413 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "61418836450951",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "warranty_claim_filings",
+  "entityIdParts": [
+    "1916959175949143535"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "1916959172919929349",
+      "name": "appeal_filed",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if we contested the denial. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959176617476444",
+      "name": "approved_amount_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Amount manufacturer agreed to pay. **NULL means Pending or Denied.** Example: 1800.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959176010868370",
+      "name": "banking_ref_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Transaction ID of the wire transfer. **NULL means Part replacement or pending.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959175949143535",
+      "name": "claim_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "1916959174056449290",
+      "name": "claim_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current processing state. Unique values: Submitted, Under Review, Approved, Denied, Appealed, Paid.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959174810716642",
+      "name": "claim_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Nature of claim. Unique values: Material Defect, Performance Guarantee, Labor Reimbursement.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959175265857156",
+      "name": "defect_description",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Technical description of the failure.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959173313534923",
+      "name": "defective_part_serial",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Serial number of the failed component.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959173853157920",
+      "name": "denial_reason",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Reason given if claim rejected. **NULL means Approved or Pending.** Unique values: Expired Warranty, Improper Installation, Act of God.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959173940066745",
+      "name": "evidence_log_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Link to downloaded device logs.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959172890924362",
+      "name": "evidence_photo_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Link to photos of damage.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959172917766568",
+      "name": "filing_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date the claim was submitted to the manufacturer.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959174062424131",
+      "name": "internal_negotiator",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Staff member handling the claim.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959173482176229",
+      "name": "manufacturer_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK to asset_manufacturers.MfrCode. Unique values: MFR-01, MFR-02.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959173523496532",
+      "name": "manufacturer_response_days",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Time taken for Mfr to respond. **NULL means No response yet.** Example: 15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959174907757590",
+      "name": "replacement_part_sku",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. SKU of part sent as replacement. **NULL means Cash settlement.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959176513496227",
+      "name": "requested_amount_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Total value claimed. Example: 2000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959174055678463",
+      "name": "rma_tracking_number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Return Merchandise Authorization code. **NULL means Field scrap authorized.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1916959173054001384",
+      "name": "settlement_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date claim was finalized. **NULL means Open.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1920413017412768090",
+      "name": "work_order_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": [
+    {
+      "id": "1924046751371985131",
+      "name": "acknowledgment_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date of receipt. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046751741753963",
+      "name": "checksum_hash",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. SHA-256 hash for integrity.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046750280215204",
+      "name": "doc_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "1924046749375727717",
+      "name": "document_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. File name.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749320872408",
+      "name": "document_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Category (Invoice, Log, Letter). Unique values: Legal Letter, Technical Report, Invoice, Photo Evidence.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749767987006",
+      "name": "file_size_mb",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Size in MB. Example: 2.5.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749284382381",
+      "name": "is_confidential",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if restricted access. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749089740048",
+      "name": "language_code",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Language of doc.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046751715740547",
+      "name": "manufacturer_acknowledged",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if they confirmed receipt. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749389800396",
+      "name": "ocr_text_extract",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Extracted text content. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749891420774",
+      "name": "page_count",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Number of pages. Example: 5.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046751787813750",
+      "name": "related_email_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Link to email thread.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046751836623990",
+      "name": "status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Draft, Final, Archived. Unique values: Final, Draft, Archived.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046752259546608",
+      "name": "storage_path_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. S3/Blob path.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046750462378073",
+      "name": "upload_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. When uploaded. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046751420716919",
+      "name": "uploaded_by",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. User who uploaded.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1924046749811917619",
+      "name": "version_number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Document version. Example: 50.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "untypedProperties": []
+}

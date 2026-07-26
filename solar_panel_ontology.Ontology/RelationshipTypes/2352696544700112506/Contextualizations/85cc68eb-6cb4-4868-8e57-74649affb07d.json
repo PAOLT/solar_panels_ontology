@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "85cc68eb-6cb4-4868-8e57-74649affb07d",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "inverters",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "SiteLocation",
+      "targetPropertyId": "5109646062513636532"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "SerialNum",
+      "targetPropertyId": "5104318411773756484"
+    }
+  ]
+}

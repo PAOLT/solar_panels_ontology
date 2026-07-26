@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "273388742516841",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "maintenance_procedures",
+  "entityIdParts": [
+    "5080279094599797808"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5080279096220527536",
+      "name": "Approver_Ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E technicians.TechNum. The senior technician or manager who approved the procedure. Possible values: T-101, T-102, T-103, T-104, T-105, T-106, T-107, T-109.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279094511982351",
+      "name": "Author_Ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E technicians.TechNum. The technician who authored the procedure. Example: T-141.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279095537228737",
+      "name": "CATEGORY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The category of the maintenance activity. Possible values: Cleaning, Electrical, Mechanical, Safety Check.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279095326431395",
+      "name": "creation_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the procedure was first created. Example: 2021-01-10.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279094789995252",
+      "name": "description",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A brief description of what the procedure entails. Example: Visual and functional check of all central inverters.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279092523104366",
+      "name": "doc_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A URL or file path to the full procedure document. Example: /docs/proc01.pdf.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279096090893299",
+      "name": "ESTIMATED_HOURS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The estimated number of hours required to complete the procedure. Example: Multimeter; Infrared Thermometer; Torque Wrench.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279093763003512",
+      "name": "frequency_in_days",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "BIGINT. The recommended interval in days between performances of this procedure. Possible values: 1095.0, 180.0, 1825.0, 30.0, 365.0, 730.0, 8.0, 90.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279093541415447",
+      "name": "IS_ACTIVE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. A flag indicating if the procedure is currently in use. Possible values: False, True.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279094959986953",
+      "name": "LAST_REVISION",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the procedure was last revised. Example: 2024-03-05.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279093485669980",
+      "name": "proc_version",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The version number of the procedure document. Possible values: v1.0, v1.1, v1.2, v1.3, v1.5, v2.0, v2.1, v2.2, v3.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279092912863900",
+      "name": "procedure_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The common name of the maintenance procedure. Example: Quarterly Inverter Check.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279094599797808",
+      "name": "ProcedureCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a standardized maintenance procedure. Example: PROC-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279092950773882",
+      "name": "requiredTools",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A list of tools and equipment required to perform the procedure. Example: High Voltage! Disconnect AC and DC sides before opening panels..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5080279095342374328",
+      "name": "SAFETY_WARNINGS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A list of key safety warnings associated with the procedure. Example: including air filters and fan operation..",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

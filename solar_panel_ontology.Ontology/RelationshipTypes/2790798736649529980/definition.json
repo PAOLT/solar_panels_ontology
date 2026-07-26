@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2790798736649529980",
+  "name": "incidents_to_technicians",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "173359687032699"
+  },
+  "target": {
+    "entityTypeId": "151344123787957"
+  }
+}

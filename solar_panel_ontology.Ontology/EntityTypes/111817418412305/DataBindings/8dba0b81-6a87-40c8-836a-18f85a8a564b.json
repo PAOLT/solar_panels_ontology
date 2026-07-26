@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "8dba0b81-6a87-40c8-836a-18f85a8a564b",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "detection_timestamp",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "affected_module_count",
+        "targetPropertyId": "2858520026971936044"
+      },
+      {
+        "sourceColumnName": "ambient_temp_c",
+        "targetPropertyId": "2858520027302307892"
+      },
+      {
+        "sourceColumnName": "bms_error_code",
+        "targetPropertyId": "2858520025378634669"
+      },
+      {
+        "sourceColumnName": "containment_status",
+        "targetPropertyId": "2858520026907141827"
+      },
+      {
+        "sourceColumnName": "cooling_pump_speed_rpm",
+        "targetPropertyId": "2858520024002715919"
+      },
+      {
+        "sourceColumnName": "estimated_degradation_pct",
+        "targetPropertyId": "2858520025124680485"
+      },
+      {
+        "sourceColumnName": "fire_suppression_activated",
+        "targetPropertyId": "2858520023957260892"
+      },
+      {
+        "sourceColumnName": "load_current_amps",
+        "targetPropertyId": "2858520025464537167"
+      },
+      {
+        "sourceColumnName": "max_cell_temp_c",
+        "targetPropertyId": "2858520023787463162"
+      },
+      {
+        "sourceColumnName": "off_gas_detected",
+        "targetPropertyId": "2858520025308153898"
+      },
+      {
+        "sourceColumnName": "requires_module_replacement",
+        "targetPropertyId": "2858520025335225403"
+      },
+      {
+        "sourceColumnName": "sensor_id_trigger",
+        "targetPropertyId": "2858520027733765220"
+      },
+      {
+        "sourceColumnName": "shutdown_duration_hours",
+        "targetPropertyId": "2858520026268094024"
+      },
+      {
+        "sourceColumnName": "technician_notes",
+        "targetPropertyId": "2858520027544049073"
+      },
+      {
+        "sourceColumnName": "temp_rise_rate_c_min",
+        "targetPropertyId": "2858520023974367520"
+      },
+      {
+        "sourceColumnName": "voltage_deviation_mv",
+        "targetPropertyId": "2858520025357839420"
+      },
+      {
+        "sourceColumnName": "storage_unit_ref",
+        "targetPropertyId": "5100130572726996410"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "batterythermalevents",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

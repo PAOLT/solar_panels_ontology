@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "391a5705-e1be-4eae-9287-8e54ae3e1465",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "safetyincidentreports",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "reporter_ref",
+      "targetPropertyId": "5076578758882401660"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "incident_id",
+      "targetPropertyId": "2761660625833182814"
+    }
+  ]
+}

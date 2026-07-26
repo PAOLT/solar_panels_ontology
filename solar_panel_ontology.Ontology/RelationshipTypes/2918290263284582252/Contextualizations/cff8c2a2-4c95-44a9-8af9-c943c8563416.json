@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "cff8c2a2-4c95-44a9-8af9-c943c8563416",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "site_inventory",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "LocationTag",
+      "targetPropertyId": "5089782044463250874"
+    },
+    {
+      "sourceColumnName": "StockItemSKU",
+      "targetPropertyId": "5089782045743349147"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "LocationTag",
+      "targetPropertyId": "5109646062513636532"
+    }
+  ]
+}

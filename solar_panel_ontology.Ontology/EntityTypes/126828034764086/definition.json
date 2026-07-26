@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "126828034764086",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "session_attendance",
+  "entityIdParts": [
+    "5616595352528452656",
+    "5616595354703131786"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5616595352528452656",
+      "name": "AttendeeNum",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "5616595354703131786",
+      "name": "CourseRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "5616595354785383872",
+      "name": "finalScore",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. The final score or grade received by the technician, if applicable. Example: 95.5.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5616595353248707830",
+      "name": "RATING",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "BIGINT. The technician\u0027s rating of the session, on a scale (e.g., 1-5). Possible values: 3.0, 4.0, 5.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5616595353377702576",
+      "name": "registration_dt",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the technician registered for the session. Example: 2023-07-20.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5616595354531439440",
+      "name": "STATUS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The technician\u0027s attendance status for the session. Possible values: Completed, In Progress, Registered.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

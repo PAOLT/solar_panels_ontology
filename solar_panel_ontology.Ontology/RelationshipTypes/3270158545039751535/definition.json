@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3270158545039751535",
+  "name": "client_support_tickets_to_clients",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "64647664594075"
+  },
+  "target": {
+    "entityTypeId": "193779065409751"
+  }
+}

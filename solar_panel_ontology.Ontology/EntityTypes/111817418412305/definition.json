@@ -1,0 +1,414 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "111817418412305",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "battery_storage_units",
+  "entityIdParts": [
+    "5100130572726996410"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5100130569480648430",
+      "name": "chemistry_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Battery cell chemistry technology. Unique values: LFP, NMC, Flow, Lead-Acid.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130571795513074",
+      "name": "cooling_system_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Operational status of the HVAC/liquid cooling system. Unique values: Active, Idle, Fault, Maintenance.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130571037470110",
+      "name": "coupling_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. How the battery connects to the grid (AC-coupled vs DC-coupled). Unique values: AC-Coupled, DC-Coupled.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130569450575792",
+      "name": "current_soc_pct",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Current State of Charge percentage (0-100). **NULL means Telemetry offline.** Example: 65.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130569947582547",
+      "name": "cycle_count",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Total number of charge/discharge cycles completed. Example: 450.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130572701402678",
+      "name": "depth_of_discharge_limit",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "REAL. Software-locked maximum discharge depth percentage. **NULL means Default setting used.** Example: 50.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130570288175092",
+      "name": "firmware_version",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current BMS firmware version.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130570802163790",
+      "name": "grid_services_enabled",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. Whether the unit is enrolled in frequency response/ancillary services. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130568929662306",
+      "name": "install_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date the battery unit was commissioned.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130569967556828",
+      "name": "internal_temp_c",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Average internal temperature of battery cells in Celsius. **NULL means Sensor error.** Example: 25.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130568821921758",
+      "name": "last_maintenance_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date of last physical inspection. **NULL means New installation.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130569277483875",
+      "name": "manufacturer_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Foreign key reference to asset_manufacturers. Unique values: MFR-01, MFR-03, MFR-05.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130569316653165",
+      "name": "purchase_cost_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Capital expenditure for the unit in USD. **NULL means Data confidential or missing.** Example: 450000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130572071848898",
+      "name": "rated_capacity_kwh",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Total energy storage capacity in kWh. Example: 2000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130572547504071",
+      "name": "rated_power_kw",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Maximum power output in kW. Example: 500.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130572849526847",
+      "name": "safety_shutdown_count",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Number of times BMS triggered emergency shutdown. Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130569342827083",
+      "name": "site_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Reference to the solar plant where this battery is installed.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130570968545149",
+      "name": "state_of_health_pct",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Current State of Health percentage relative to new. Example: 92.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130572726996410",
+      "name": "storage_unit_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for the battery storage container/unit. Example: BESS-1A2B3C.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5100130571381507563",
+      "name": "warranty_expiration",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date the manufacturer warranty expires.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [
+    {
+      "id": "2858520026971936044",
+      "name": "affected_module_count",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Number of battery modules involved. Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520027302307892",
+      "name": "ambient_temp_c",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Outside air temperature at time of event. Example: 30.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520025378634669",
+      "name": "bms_error_code",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Error code logged by Battery Management System. Unique values: ERR-TEMP-HI, ERR-VOLT-IMB, CRIT-THERMAL.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520026907141827",
+      "name": "containment_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Did the event spread to neighboring units?. Unique values: Contained, Spread Locally, Runaway.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520024002715919",
+      "name": "cooling_pump_speed_rpm",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Speed of cooling pumps during event. **NULL means Passive cooling only.** Example: 3000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520025124680485",
+      "name": "estimated_degradation_pct",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "REAL. Estimated loss of SOH due to this event. Example: 50.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520023957260892",
+      "name": "fire_suppression_activated",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if Novec/Water suppression system fired. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520025464537167",
+      "name": "load_current_amps",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Current flow (charge/discharge) at moment of event. Example: 100.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520023787463162",
+      "name": "max_cell_temp_c",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Peak temperature recorded during the event. Example: 65.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520025308153898",
+      "name": "off_gas_detected",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if electrolyte venting/gas was detected. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520025335225403",
+      "name": "requires_module_replacement",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if hardware replacement is needed. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520027733765220",
+      "name": "sensor_id_trigger",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. ID of the specific sensor that tripped first.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520026268094024",
+      "name": "shutdown_duration_hours",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "REAL. Time the unit was offline for safety checks. Example: 48.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520027544049073",
+      "name": "technician_notes",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Observations from physical inspection. **NULL means Automated log only.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520023974367520",
+      "name": "temp_rise_rate_c_min",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Rate of temperature increase (Celsius per minute). Example: 5.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2858520025357839420",
+      "name": "voltage_deviation_mv",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Max voltage difference between cells. Example: 150.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "untypedProperties": []
+}

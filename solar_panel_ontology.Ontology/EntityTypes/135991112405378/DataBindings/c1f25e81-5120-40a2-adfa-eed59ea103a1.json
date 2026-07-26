@@ -1,0 +1,49 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "c1f25e81-5120-40a2-adfa-eed59ea103a1",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "cleancost",
+        "targetPropertyId": "1295428793615436564"
+      },
+      {
+        "sourceColumnName": "maintcost",
+        "targetPropertyId": "1295428793605701372"
+      },
+      {
+        "sourceColumnName": "mtbfh",
+        "targetPropertyId": "1295428792047622689"
+      },
+      {
+        "sourceColumnName": "mttrh",
+        "targetPropertyId": "1295428790760747380"
+      },
+      {
+        "sourceColumnName": "optpot",
+        "targetPropertyId": "1295428793339552334"
+      },
+      {
+        "sourceColumnName": "replcost",
+        "targetPropertyId": "1295428791615059807"
+      },
+      {
+        "sourceColumnName": "revloss",
+        "targetPropertyId": "1295428793057076566"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "5109646062513636532"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "plant_record_operational_metrics",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

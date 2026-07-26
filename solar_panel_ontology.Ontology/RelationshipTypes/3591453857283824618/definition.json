@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3591453857283824618",
+  "name": "asset_manufacturers_to_spare_parts",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "281097493297300"
+  },
+  "target": {
+    "entityTypeId": "106867936851516"
+  }
+}

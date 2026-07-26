@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "145585595776017",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "financial_ledger",
+  "entityIdParts": [
+    "5127954487891131703"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5127954489893797113",
+      "name": "amount",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The monetary value of the transaction. Positive for credit, negative for debit. Example: $35,250.50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954488544671817",
+      "name": "category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The accounting category for the transaction. Possible values: Manufacturer Specific, Safety, Technical.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954491368836151",
+      "name": "CURRENCY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The currency of the transaction amount. Possible values: EUR, GBP, USD.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954491138505584",
+      "name": "DESCRIPTION",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A detailed description of the transaction. Example: Entry-level certification for solar PV installers..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954491136512151",
+      "name": "entry_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the transaction was entered into the system. Example: 2022-03-05 11:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954490777115184",
+      "name": "invoice_no",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The associated invoice number, if any. Example: INV-2023-05-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954490388782702",
+      "name": "LinkedClient",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E clients.ClientCode. The client associated with the transaction, if applicable. Example: C1001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954490127786961",
+      "name": "LinkedContract",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E ppa_contracts.ContractNum. The contract associated with the transaction, if applicable. Example: PPA-001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954490273395694",
+      "name": "LinkedMFR",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E asset_manufacturers.MfrCode. The manufacturer associated with the transaction, if applicable. Example: MFR-02.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954491755410129",
+      "name": "LinkedOrder",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E work_orders.OrderNum. The work order associated with the transaction, if applicable. Example: WO-1001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954489908624229",
+      "name": "LinkedSite",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E plants.sitekey. The site associated with the transaction, if applicable. Example: SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954488149975874",
+      "name": "PAYMENT_STATUS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current payment status of the transaction. Possible values: Overdue, Paid, Unpaid.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954489216704378",
+      "name": "transaction_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the transaction occurred. Example: 31-May-23.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954489329191380",
+      "name": "TXN_TYPE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The type of transaction (Credit or Debit). Possible values: Credit, Debit.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5127954487891131703",
+      "name": "TxnRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. Unique identifier for a financial transaction. Example: 10001.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

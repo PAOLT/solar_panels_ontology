@@ -1,0 +1,236 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "a585d38c-49ea-b803-441d-ac337e9c8e74",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "solar_panel_ontology",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "inspection",
+      "is_selected": true,
+      "display_name": "inspection",
+      "type": "ontology.entity",
+      "description": "dqscore,inspectdt,inspectmode,inspectres,maintsched",
+      "children": []
+    },
+    {
+      "id": "certifications",
+      "is_selected": true,
+      "display_name": "certifications",
+      "type": "ontology.entity",
+      "description": "category,CERT_IDENTIFIER,CERT_LEVEL,CertCode,certification_name,created_ts,DESCRIPTION,isRenewable,issuer_website,IssuingBody,LAST_UPDATED,RENEWAL_COST,required_training_hours,Requires_Cert_Code,validity_months",
+      "children": []
+    },
+    {
+      "id": "training_sessions",
+      "is_selected": true,
+      "display_name": "training_sessions",
+      "type": "ontology.entity",
+      "description": "cost_per_head,COURSE_CODE,courseName,created_ts,duration_hours,instructor,INSTRUCTOR_BIO,last_modified_ts,LOCATION,MAX_ATTENDEES,provider,SESSION_DATE,SessionTag,Ties_To_Cert,trainingType",
+      "children": []
+    },
+    {
+      "id": "technicians",
+      "is_selected": true,
+      "display_name": "technicians",
+      "type": "ontology.entity",
+      "description": "contact_phone,created_ts,EMAIL,emergency_contact_info,employee_number,employmentStatus,FullName,hire_date,JOB_TITLE,last_modified_ts,Reports_To_Tech,SPECIALTY,team,TechNum,TERMINATION_DATE",
+      "children": []
+    },
+    {
+      "id": "maintenance_procedures",
+      "is_selected": true,
+      "display_name": "maintenance_procedures",
+      "type": "ontology.entity",
+      "description": "Approver_Ref,Author_Ref,CATEGORY,creation_date,description,doc_url,ESTIMATED_HOURS,frequency_in_days,IS_ACTIVE,LAST_REVISION,proc_version,procedure_name,ProcedureCode,requiredTools,SAFETY_WARNINGS",
+      "children": []
+    },
+    {
+      "id": "work_orders",
+      "is_selected": true,
+      "display_name": "work_orders",
+      "type": "ontology.entity",
+      "description": "actual_start_ts,alrtcnt,AssignedTechnician,alrtstate,COMPLETED_TIMESTAMP,maintprio,costing,replprio,CREATED_TS,AuthorRef,Creator,COMMENT,description,NEW_STATUS,OrderNum,previousStatus,PlantRef,priority,resolution,ROOT_CAUSE,SCHEDULED_END,scheduled_start,STATUS,TITLE,TriggeringAlert,work_type",
+      "children": []
+    },
+    {
+      "id": "spare_parts",
+      "is_selected": true,
+      "display_name": "spare_parts",
+      "type": "ontology.entity",
+      "description": "category,created_ts,DESCRIPTION,is_hazardous,last_modified_ts,LEAD_TIME_DAYS,Manufacturer_Code,min_order_qty,part_name,PartSKU,physical_properties,shelf_life_months,storage_bin,UNIT_COST",
+      "children": []
+    },
+    {
+      "id": "site_inventory",
+      "is_selected": true,
+      "display_name": "site_inventory",
+      "type": "ontology.entity",
+      "description": "LAST_CHECKED,last_restock,last_updated_ts,LocationTag,quantity,REORDER_LEVEL,StockItemSKU",
+      "children": []
+    },
+    {
+      "id": "panel_models",
+      "is_selected": true,
+      "display_name": "panel_models",
+      "type": "ontology.entity",
+      "description": "degyrrate,effpct,makertag,modkey,nomoptempc,pnlkind,rated_w,tempcoeff",
+      "children": []
+    },
+    {
+      "id": "weather_stations",
+      "is_selected": true,
+      "display_name": "weather_stations",
+      "type": "ontology.entity",
+      "description": "assetStatus,FIRMWARE,INSTALL_DATE,LAST_CALIBRATION,location_coordinates,LOG_INTERVAL_SEC,MakerCode,MODEL,next_calibration_due,plant_site_ref,protocol,PURCHASE_COST,serial_num,StationCode",
+      "children": []
+    },
+    {
+      "id": "battery_storage_units",
+      "is_selected": true,
+      "display_name": "battery_storage_units",
+      "type": "ontology.entity",
+      "description": "chemistry_type,affected_module_count,cooling_system_status,ambient_temp_c,coupling_type,bms_error_code,current_soc_pct,containment_status,cycle_count,cooling_pump_speed_rpm,depth_of_discharge_limit,estimated_degradation_pct,firmware_version,fire_suppression_activated,grid_services_enabled,load_current_amps,install_date,max_cell_temp_c,internal_temp_c,off_gas_detected,last_maintenance_date,requires_module_replacement,manufacturer_ref,sensor_id_trigger,purchase_cost_usd,shutdown_duration_hours,rated_capacity_kwh,technician_notes,rated_power_kw,temp_rise_rate_c_min,safety_shutdown_count,voltage_deviation_mv,site_ref,state_of_health_pct,storage_unit_id,warranty_expiration",
+      "children": []
+    },
+    {
+      "id": "inverters",
+      "is_selected": true,
+      "display_name": "inverters",
+      "type": "ontology.entity",
+      "description": "ASSET_STATUS,COMMISSION_DATE,COST,decommission_date,firmware_ver,geolocation,installDate,IP_ADDR,LAST_SERVICE,location_in_plant,ModelIdentifier,next_service_due,SerialNum,SiteLocation",
+      "children": []
+    },
+    {
+      "id": "inverter_models",
+      "is_selected": true,
+      "display_name": "inverter_models",
+      "type": "ontology.entity",
+      "description": "created_ts,datasheet,Dimensions,EFFICIENCY,EOL_DATE,InverterModelTag,last_modified_ts,MAX_INPUT_VOLTAGE,max_power_kw,modelName,mppt_channels,PRODUCT_LINE,releaseDate,VendorCode,WARRANTY_YEARS,weight_kg",
+      "children": []
+    },
+    {
+      "id": "plants",
+      "is_selected": true,
+      "display_name": "plants",
+      "type": "ontology.entity",
+      "description": "azmdeg,cleancost,cap_mw,maintcost,complyflag,mtbfh,docstate,mttrh,envtag,optpot,goliveon,replcost,insurstate,revloss,modhook,elec_perf_snapshot,recyclenote,env_snapshot,sitekey,mech_health_snapshot,sitelabel,carbon_footprint_tons,tiltdeg,community_summary,warrclaims,ENTRY_TIMESTAMP,warrstate,land_impact_notes,QUARTER,REPORT_AUTHOR,report_status,reporting_year,ReportNum,SUBMITTED_DATE,verified_by,WASTE_RECYCLED_KG,water_usage_liters,WILDLIFE_INCIDENTS,AUDIT_TYPE,auditDate,auditingFirm,AuditTag,cap_required,entry_ts,FOLLOW_UP_DUE,LEAD_AUDITOR,major_findings,MINOR_FINDINGS,report_published,REPORT_URL,result,SCORE",
+      "children": []
+    },
+    {
+      "id": "supply_chain_shipments",
+      "is_selected": true,
+      "display_name": "supply_chain_shipments",
+      "type": "ontology.entity",
+      "description": "actual_arrival_date,carrier_message,cargo_type,delay_reason,carrier_name,estimated_delivery_update,container_number,gps_lat,customs_clearance_status,gps_lon,damaged_on_arrival,hub_facility_code,declared_value_usd,location_city,destination_plant_ref,location_country,expected_arrival_date,shock_g_force,incoterms,signed_by,insurance_policy_id,status_code,manufacturer_ref,status_description,pallet_count,temperature_c,receiving_clerk_signature,transport_mode,shipment_create_date,update_timestamp,shipment_id,vessel_flight_number,shipment_status,shipping_cost_usd,total_weight_kg,tracking_number",
+      "children": []
+    },
+    {
+      "id": "asset_manufacturers",
+      "is_selected": true,
+      "display_name": "asset_manufacturers",
+      "type": "ontology.entity",
+      "description": "contact_points,COUNTRY,created_at,HQ_Address,LEGAL_NAME,mfr_name,MfrCode,StockSymbol,UPDATED_AT,website_url,yearFounded",
+      "children": []
+    },
+    {
+      "id": "energy_tariffs",
+      "is_selected": true,
+      "display_name": "energy_tariffs",
+      "type": "ontology.entity",
+      "description": "For_Contract_Num,is_active,PRICE_KWH,rateType,SEASON,TariffCode,time_period",
+      "children": []
+    },
+    {
+      "id": "ppa_contracts",
+      "is_selected": true,
+      "display_name": "ppa_contracts",
+      "type": "ontology.entity",
+      "description": "CLIENT_MGR,ContractNum,contractStatus,CustomerCode,document_url,END_DATE,ESCALATION_RATE_PCT,governingLaw,guaranteed_yield_kwh_yr,LAST_MODIFIED,our_manager,PENALTY_CLAUSE,SIGNED_DATE,SiteRef,start_date,term_months,termination_fee,TOTAL_VALUE",
+      "children": []
+    },
+    {
+      "id": "clients",
+      "is_selected": true,
+      "display_name": "clients",
+      "type": "ontology.entity",
+      "description": "client_type,ClientCode,ClientName,contact_details,CreditRating,CUSTOMER_SINCE,INDUSTRY,LAST_MODIFIED,record_created_ts",
+      "children": []
+    },
+    {
+      "id": "financial_ledger",
+      "is_selected": true,
+      "display_name": "financial_ledger",
+      "type": "ontology.entity",
+      "description": "amount,category,CURRENCY,DESCRIPTION,entry_ts,invoice_no,LinkedClient,LinkedContract,LinkedMFR,LinkedOrder,LinkedSite,PAYMENT_STATUS,transaction_date,TXN_TYPE,TxnRef",
+      "children": []
+    },
+    {
+      "id": "client_support_tickets",
+      "is_selected": true,
+      "display_name": "client_support_tickets",
+      "type": "ontology.entity",
+      "description": "assigned_tech_ref,category,client_ref,closed_date,contact_channel,contact_person_name,description_body,is_escalated,last_update_ts,priority,related_invoice_no,resolution_summary,response_time_hours,satisfaction_score,sentiment_analysis_score,sla_deadline,status,subject_line,ticket_id,ticket_open_date",
+      "children": []
+    },
+    {
+      "id": "ticket_resolution_steps",
+      "is_selected": true,
+      "display_name": "ticket_resolution_steps",
+      "type": "ontology.entity",
+      "description": "action_taken_by,action_timestamp,action_type,attachment_url,client_read_receipt,escalation_flag,is_public,message_content,new_status,previous_status,response_channel,sentiment_score,step_id,step_sequence,system_generated,tags,ticket_ref,time_spent_minutes",
+      "children": []
+    },
+    {
+      "id": "work_order_parts_usage",
+      "is_selected": true,
+      "display_name": "work_order_parts_usage",
+      "type": "ontology.entity",
+      "description": "COST_AT_TIME,PartRef,quantity_used,WorkOrderRef",
+      "children": []
+    },
+    {
+      "id": "technicians_certifications",
+      "is_selected": true,
+      "display_name": "technicians_certifications",
+      "type": "ontology.entity",
+      "description": "CertificationRef,EXPIRY,issue_date,TechnicianRef,verification_path",
+      "children": []
+    },
+    {
+      "id": "work_order_procedures",
+      "is_selected": true,
+      "display_name": "work_order_procedures",
+      "type": "ontology.entity",
+      "description": "executionStatus,NOTES,ProcedureLink,WorkOrderLink",
+      "children": []
+    },
+    {
+      "id": "session_attendance",
+      "is_selected": true,
+      "display_name": "session_attendance",
+      "type": "ontology.entity",
+      "description": "AttendeeNum,CourseRef,finalScore,RATING,registration_dt,STATUS",
+      "children": []
+    },
+    {
+      "id": "warranty_claim_filings",
+      "is_selected": true,
+      "display_name": "warranty_claim_filings",
+      "type": "ontology.entity",
+      "description": "appeal_filed,acknowledgment_date,approved_amount_usd,document_name,banking_ref_id,document_type,claim_id,file_size_mb,claim_status,is_confidential,claim_type,language_code,defect_description,manufacturer_acknowledged,defective_part_serial,ocr_text_extract,denial_reason,page_count,evidence_log_url,related_email_id,evidence_photo_url,status,filing_date,storage_path_url,internal_negotiator,upload_date,manufacturer_ref,uploaded_by,manufacturer_response_days,version_number,replacement_part_sku,requested_amount_usd,rma_tracking_number,settlement_date",
+      "children": []
+    },
+    {
+      "id": "safety_incident_reports",
+      "is_selected": true,
+      "display_name": "safety_incident_reports",
+      "type": "ontology.entity",
+      "description": "closure_date,action_description,description_narrative,action_type,equipment_damaged_id,approver_ref,estimated_damage_cost_usd,assigned_to_person,immediate_action_taken,comments,incident_date,completion_date,incident_id,due_date,incident_time,effectiveness_rating,incident_type,estimated_cost_usd,investigation_status,priority_level,involved_person_count,recurring_check_required,lost_time_hours,resources_required,medical_attention_required,status,osha_reportable,verification_date,reporter_ref,verification_method,root_cause_category,verifier_name,severity_level,site_ref,weather_contribution_factor,witness_statement_url",
+      "children": []
+    }
+  ]
+}

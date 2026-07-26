@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "17f365c5-3642-43b7-835e-7bd038851a1a",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "update_ts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "AuthorRef",
+        "targetPropertyId": "1904990183965778168"
+      },
+      {
+        "sourceColumnName": "COMMENT",
+        "targetPropertyId": "1904990182024312859"
+      },
+      {
+        "sourceColumnName": "NEW_STATUS",
+        "targetPropertyId": "1904990181149720223"
+      },
+      {
+        "sourceColumnName": "previousStatus",
+        "targetPropertyId": "1904990183667603914"
+      },
+      {
+        "sourceColumnName": "ReferenceOrder",
+        "targetPropertyId": "5083449615180512387"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "work_order_updates",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

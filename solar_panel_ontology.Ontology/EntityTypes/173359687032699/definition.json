@@ -1,0 +1,410 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "173359687032699",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "safety_incident_reports",
+  "entityIdParts": [
+    "2761660625833182814"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2761660584021575911",
+      "name": "closure_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date the report was finalized. **NULL means Still open.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660626355518522",
+      "name": "description_narrative",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Detailed description of what happened.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660626748760053",
+      "name": "equipment_damaged_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. ID of any equipment broken (e.g., Inverter Serial). **NULL means No equipment damaged.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660626565097582",
+      "name": "estimated_damage_cost_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Financial cost of equipment damage. **NULL means No financial damage.** Example: 1000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660629495935532",
+      "name": "immediate_action_taken",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Steps taken immediately after the incident.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660629409094699",
+      "name": "incident_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date the incident occurred.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660625833182814",
+      "name": "incident_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "2761660626636206615",
+      "name": "incident_time",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Time the incident occurred. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660627145467102",
+      "name": "incident_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Nature of the incident. Unique values: Electrical Shock, Fall from Height, Heat Stress, Vehicle Collision, Wildlife Encounter, Tool Injury.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660625856460137",
+      "name": "investigation_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current state of the safety investigation. Unique values: Open, Under Review, Closed, CAPA Assigned.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660626136497395",
+      "name": "involved_person_count",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Number of people directly involved. Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660629276181089",
+      "name": "lost_time_hours",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Work hours lost due to the incident. Example: 4.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660626445274736",
+      "name": "medical_attention_required",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. Did the incident require professional medical aid?. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660627827838217",
+      "name": "osha_reportable",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. Does this meet regulatory reporting thresholds?. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660625723257214",
+      "name": "reporter_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Technician who reported the incident.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660625669239058",
+      "name": "root_cause_category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Final determination of cause. **NULL means Investigation ongoing.** Unique values: Human Error, Equipment Failure, Procedure Deficiency, Unpreventable External Factor.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660626540051983",
+      "name": "severity_level",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Classification of severity. Unique values: Near Miss, Minor First Aid, Lost Time Injury, Fatality, Property Damage Only.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660628712377387",
+      "name": "site_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK Reference to plants.sitekey. Unique values: SP9227, SP6740, SP7738.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660627778696640",
+      "name": "weather_contribution_factor",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Role weather played in the incident. Unique values: None, Rain/Slippery, High Heat, Wind Gusts.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2761660628715522784",
+      "name": "witness_statement_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Link to recorded witness statements. **NULL means No witnesses.**",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [
+    {
+      "id": "2777317292970764774",
+      "name": "action_description",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Details of the action to be taken.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317289079528189",
+      "name": "action_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Category (Training, Engineering Control, Procedure Change). Unique values: Training, Engineering Control, PPE Update, Policy Revision.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317288964502888",
+      "name": "approver_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Manager who approved the plan. Unique values: T-101, T-103.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317290757305280",
+      "name": "assigned_to_person",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Person responsible for implementation.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317288986187851",
+      "name": "comments",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Progress notes. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317290918337015",
+      "name": "completion_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Actual completion date. **NULL means Not yet completed.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317291318123920",
+      "name": "due_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Deadline for completion.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317289362132537",
+      "name": "effectiveness_rating",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Score (1-5) of how well it worked. **NULL means Too early to tell.** Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317291078520671",
+      "name": "estimated_cost_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Budget for the correction. Example: 1000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317291287719799",
+      "name": "priority_level",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Urgency. Unique values: High, Medium, Low.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317290565092469",
+      "name": "recurring_check_required",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if this needs annual review. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317291304223150",
+      "name": "resources_required",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Tools/people needed. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317292878361918",
+      "name": "status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current status. Unique values: Open, In Progress, Verified, Closed.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317292187135125",
+      "name": "verification_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date of effectiveness check. **NULL means Not yet verified.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317289786186972",
+      "name": "verification_method",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. How effectiveness will be checked. Unique values: Audit, Observation, Quiz, Inspection.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2777317292158820282",
+      "name": "verifier_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Name of person verifying. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "untypedProperties": []
+}

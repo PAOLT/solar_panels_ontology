@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "236508134603693",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "energy_tariffs",
+  "entityIdParts": [
+    "5119678499478650393"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5119678498198161801",
+      "name": "For_Contract_Num",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E ppa_contracts.ContractNum. The contract this tariff applies to. Example: PPA-001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5119678501060412790",
+      "name": "is_active",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. A flag indicating if this tariff is currently active. Possible values: False, True.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5119678499621348753",
+      "name": "PRICE_KWH",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The price per kilowatt-hour for this tariff. Example: $0.155.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5119678499943220685",
+      "name": "rateType",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The type of rate structure. Possible values: Fixed, Time-of-Use.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5119678501968923637",
+      "name": "SEASON",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The season this rate applies to (e.g., Summer). Possible values: Summer, Winter.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5119678499478650393",
+      "name": "TariffCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a specific energy tariff. Example: T-PPA001-S-PK.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5119678499756154709",
+      "name": "time_period",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A description of the time period this rate applies to (e.g., Peak hours). Possible values: Off-Peak (All other), Peak (1pm-6pm M-F), Peak (2pm-7pm M-F), Peak (2pm-8pm M-F), Peak (3pm-7pm M-F), Peak (3pm-8pm M-F), Peak (5pm-9pm M-F), Peak (6am-9am M-F), Super Peak (4pm-7pm M-F), Super Peak (5pm-8pm M-F).",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "4b4ba262-f17d-47df-b56f-f4fa70f869d8",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "client_type",
+        "targetPropertyId": "5124548800943961854"
+      },
+      {
+        "sourceColumnName": "ClientCode",
+        "targetPropertyId": "5124548798642364431"
+      },
+      {
+        "sourceColumnName": "ClientName",
+        "targetPropertyId": "5124548801802760403"
+      },
+      {
+        "sourceColumnName": "contact_details",
+        "targetPropertyId": "5124548800983671243"
+      },
+      {
+        "sourceColumnName": "CreditRating",
+        "targetPropertyId": "5124548799719271434"
+      },
+      {
+        "sourceColumnName": "CUSTOMER_SINCE",
+        "targetPropertyId": "5124548801202784799"
+      },
+      {
+        "sourceColumnName": "INDUSTRY",
+        "targetPropertyId": "5124548799138108207"
+      },
+      {
+        "sourceColumnName": "LAST_MODIFIED",
+        "targetPropertyId": "5124548799640268237"
+      },
+      {
+        "sourceColumnName": "record_created_ts",
+        "targetPropertyId": "5124548799703675398"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "clients",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

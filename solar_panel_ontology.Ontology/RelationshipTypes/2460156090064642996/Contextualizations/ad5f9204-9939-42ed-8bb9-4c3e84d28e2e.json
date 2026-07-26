@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "ad5f9204-9939-42ed-8bb9-4c3e84d28e2e",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "weather_stations",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "StationCode",
+      "targetPropertyId": "5095816015696480007"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "MakerCode",
+      "targetPropertyId": "5116347594554434437"
+    }
+  ]
+}

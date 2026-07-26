@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "112820561669958",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "certifications",
+  "entityIdParts": [
+    "5068360561270836794"
+  ],
+  "displayNamePropertyId": "5068360559787538797",
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5068360559787538797",
+      "name": "category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The category of the certification (e.g., Technical, Safety). Possible values: Manufacturer Specific, Safety, Technical.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360562264957886",
+      "name": "CERT_IDENTIFIER",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The official code or identifier used by the issuing body. Example: PVIP-1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360561743848777",
+      "name": "CERT_LEVEL",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The level of the certification, if applicable (e.g., Associate, Professional). Possible values: Advanced, Associate, Awareness, Competent Person, Expert, Level 1, Master, Professional.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360561270836794",
+      "name": "CertCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a specific certification. Example: CERT-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360561253481921",
+      "name": "certification_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The official name of the certification. Example: Certified Solar PV Installer.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360559723602672",
+      "name": "created_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the certification record was created. Example: 2019-01-15 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360560261235873",
+      "name": "DESCRIPTION",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A brief description of the certification\u0027s scope and purpose. Example: Entry-level certification for solar PV installers..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360561129840527",
+      "name": "isRenewable",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. A flag indicating if the certification can be renewed. Possible values: False, True.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360560251183463",
+      "name": "issuer_website",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The website of the issuing body. Example: https://nabcep.org.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360558097537851",
+      "name": "IssuingBody",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The organization or authority that issues the certification. Example: NABCEP.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360561601212595",
+      "name": "LAST_UPDATED",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the certification record. Example: 2024-01-15 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360560655215466",
+      "name": "RENEWAL_COST",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The cost to renew the certification. Example: $250.00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360559069284183",
+      "name": "required_training_hours",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of training hours required for the certification. Possible values: 16, 20, 24, 32, 4, 40, 58, 6, 60, 8.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360559897657189",
+      "name": "Requires_Cert_Code",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E certifications.CertCode. The prerequisite certification required for this one. Possible values: CERT-01, CERT-02, CERT-03, CERT-04, CERT-08, CERT-09, CERT-17, CERT-18.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5068360559741959538",
+      "name": "validity_months",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of months the certification is valid before expiration. Possible values: 12, 2 years, 24, 24 Months, 3 years, 36, 36 Months, 4 years.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

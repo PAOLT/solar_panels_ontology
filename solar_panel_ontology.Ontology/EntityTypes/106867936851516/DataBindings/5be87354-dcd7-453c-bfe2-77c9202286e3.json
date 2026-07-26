@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "5be87354-dcd7-453c-bfe2-77c9202286e3",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "category",
+        "targetPropertyId": "5087037752945131485"
+      },
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "5087037754306057373"
+      },
+      {
+        "sourceColumnName": "DESCRIPTION",
+        "targetPropertyId": "5087037752222535669"
+      },
+      {
+        "sourceColumnName": "is_hazardous",
+        "targetPropertyId": "5087037755074679014"
+      },
+      {
+        "sourceColumnName": "last_modified_ts",
+        "targetPropertyId": "5087037753030286553"
+      },
+      {
+        "sourceColumnName": "LEAD_TIME_DAYS",
+        "targetPropertyId": "5087037754656016971"
+      },
+      {
+        "sourceColumnName": "Manufacturer_Code",
+        "targetPropertyId": "5087037755311232231"
+      },
+      {
+        "sourceColumnName": "min_order_qty",
+        "targetPropertyId": "5087037751912451730"
+      },
+      {
+        "sourceColumnName": "part_name",
+        "targetPropertyId": "5087037754891663785"
+      },
+      {
+        "sourceColumnName": "PartSKU",
+        "targetPropertyId": "5087037753396570573"
+      },
+      {
+        "sourceColumnName": "physical_properties",
+        "targetPropertyId": "5087037754131817626"
+      },
+      {
+        "sourceColumnName": "shelf_life_months",
+        "targetPropertyId": "5087037753045801616"
+      },
+      {
+        "sourceColumnName": "storage_bin",
+        "targetPropertyId": "5087037751875840817"
+      },
+      {
+        "sourceColumnName": "UNIT_COST",
+        "targetPropertyId": "5087037754067841295"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "spare_parts",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

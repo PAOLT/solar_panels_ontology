@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "a0227543-2532-42d6-bf67-24c5b937bd6f",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "CertificationRef",
+        "targetPropertyId": "5533271644429090023"
+      },
+      {
+        "sourceColumnName": "EXPIRY",
+        "targetPropertyId": "5533271645530755427"
+      },
+      {
+        "sourceColumnName": "issue_date",
+        "targetPropertyId": "5533271643673857347"
+      },
+      {
+        "sourceColumnName": "TechnicianRef",
+        "targetPropertyId": "5533271643346251781"
+      },
+      {
+        "sourceColumnName": "verification_path",
+        "targetPropertyId": "5533271643662385533"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "technician_certifications",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

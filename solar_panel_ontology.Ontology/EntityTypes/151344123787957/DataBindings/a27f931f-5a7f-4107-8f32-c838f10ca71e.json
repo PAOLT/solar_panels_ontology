@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "a27f931f-5a7f-4107-8f32-c838f10ca71e",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "contact_phone",
+        "targetPropertyId": "5076578757627316645"
+      },
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "5076578757722542688"
+      },
+      {
+        "sourceColumnName": "EMAIL",
+        "targetPropertyId": "5076578755748813323"
+      },
+      {
+        "sourceColumnName": "emergency_contact_info",
+        "targetPropertyId": "5076578758296850287"
+      },
+      {
+        "sourceColumnName": "employee_number",
+        "targetPropertyId": "5076578757207611852"
+      },
+      {
+        "sourceColumnName": "employmentStatus",
+        "targetPropertyId": "5076578755549907706"
+      },
+      {
+        "sourceColumnName": "FullName",
+        "targetPropertyId": "5076578756833242580"
+      },
+      {
+        "sourceColumnName": "hire_date",
+        "targetPropertyId": "5076578758550919274"
+      },
+      {
+        "sourceColumnName": "JOB_TITLE",
+        "targetPropertyId": "5076578758065867416"
+      },
+      {
+        "sourceColumnName": "last_modified_ts",
+        "targetPropertyId": "5076578757691825101"
+      },
+      {
+        "sourceColumnName": "Reports_To_Tech",
+        "targetPropertyId": "5076578755674043575"
+      },
+      {
+        "sourceColumnName": "SPECIALTY",
+        "targetPropertyId": "5076578757260806445"
+      },
+      {
+        "sourceColumnName": "team",
+        "targetPropertyId": "5076578757900880259"
+      },
+      {
+        "sourceColumnName": "TechNum",
+        "targetPropertyId": "5076578758882401660"
+      },
+      {
+        "sourceColumnName": "TERMINATION_DATE",
+        "targetPropertyId": "5076578756436562411"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "technicians",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

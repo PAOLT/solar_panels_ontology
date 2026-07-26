@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3419866935041710433",
+  "name": "site_inventory_to_spare_parts",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "12880393099422"
+  },
+  "target": {
+    "entityTypeId": "106867936851516"
+  }
+}

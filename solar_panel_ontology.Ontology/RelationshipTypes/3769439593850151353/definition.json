@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3769439593850151353",
+  "name": "financial_ledger_to_asset_manufacturers",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "145585595776017"
+  },
+  "target": {
+    "entityTypeId": "281097493297300"
+  }
+}

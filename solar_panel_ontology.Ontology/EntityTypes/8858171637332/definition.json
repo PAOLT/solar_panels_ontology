@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "8858171637332",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "training_sessions",
+  "entityIdParts": [
+    "5072771668226416088"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5072771629912156372",
+      "name": "cost_per_head",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The cost per person to attend the training. Example: $500.00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771666863663186",
+      "name": "COURSE_CODE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The unique internal or external code for the course. Example: PV101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771666974216581",
+      "name": "courseName",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The title of the training course. Example: Intro to PV Installation.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771667396552626",
+      "name": "created_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the training session record was created. Example: 2019-01-15 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771669512433407",
+      "name": "duration_hours",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The duration of the training session in hours. Example: 8.0 hours.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771667110007662",
+      "name": "instructor",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The name of the primary instructor. Example: Frank Miller.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771669595889230",
+      "name": "INSTRUCTOR_BIO",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A brief biography of the instructor. Example: 20\u002B years Master Electrician, NABCEP certified..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771669819496878",
+      "name": "last_modified_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the training session record. Example: 2023-10-10 10:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771669524768454",
+      "name": "LOCATION",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The physical or virtual location of the training. Example: Main Office Training Room.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771668788020341",
+      "name": "MAX_ATTENDEES",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The maximum number of attendees allowed in the session. Possible values: 10, 100, 12, 15, 20, 25, 30, 40, 50, 8.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771667482389161",
+      "name": "provider",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The company or organization providing the training. Example: SolarTrain Inc..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771667661719527",
+      "name": "SESSION_DATE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the training session is held. Example: 06/12/2023.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771668226416088",
+      "name": "SessionTag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a specific training session. Example: SESS-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771665922782612",
+      "name": "Ties_To_Cert",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E certifications.CertCode. The certification this training is associated with. Example: CERT-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5072771667542179272",
+      "name": "trainingType",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The format of the training session. Possible values: On-site, Online, Workshop.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

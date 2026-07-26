@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "7e722914-495e-442a-9f88-62fa5e4a0477",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "chemistry_type",
+        "targetPropertyId": "5100130569480648430"
+      },
+      {
+        "sourceColumnName": "cooling_system_status",
+        "targetPropertyId": "5100130571795513074"
+      },
+      {
+        "sourceColumnName": "coupling_type",
+        "targetPropertyId": "5100130571037470110"
+      },
+      {
+        "sourceColumnName": "current_soc_pct",
+        "targetPropertyId": "5100130569450575792"
+      },
+      {
+        "sourceColumnName": "cycle_count",
+        "targetPropertyId": "5100130569947582547"
+      },
+      {
+        "sourceColumnName": "depth_of_discharge_limit",
+        "targetPropertyId": "5100130572701402678"
+      },
+      {
+        "sourceColumnName": "firmware_version",
+        "targetPropertyId": "5100130570288175092"
+      },
+      {
+        "sourceColumnName": "grid_services_enabled",
+        "targetPropertyId": "5100130570802163790"
+      },
+      {
+        "sourceColumnName": "install_date",
+        "targetPropertyId": "5100130568929662306"
+      },
+      {
+        "sourceColumnName": "internal_temp_c",
+        "targetPropertyId": "5100130569967556828"
+      },
+      {
+        "sourceColumnName": "last_maintenance_date",
+        "targetPropertyId": "5100130568821921758"
+      },
+      {
+        "sourceColumnName": "manufacturer_ref",
+        "targetPropertyId": "5100130569277483875"
+      },
+      {
+        "sourceColumnName": "purchase_cost_usd",
+        "targetPropertyId": "5100130569316653165"
+      },
+      {
+        "sourceColumnName": "rated_capacity_kwh",
+        "targetPropertyId": "5100130572071848898"
+      },
+      {
+        "sourceColumnName": "rated_power_kw",
+        "targetPropertyId": "5100130572547504071"
+      },
+      {
+        "sourceColumnName": "safety_shutdown_count",
+        "targetPropertyId": "5100130572849526847"
+      },
+      {
+        "sourceColumnName": "site_ref",
+        "targetPropertyId": "5100130569342827083"
+      },
+      {
+        "sourceColumnName": "state_of_health_pct",
+        "targetPropertyId": "5100130570968545149"
+      },
+      {
+        "sourceColumnName": "storage_unit_id",
+        "targetPropertyId": "5100130572726996410"
+      },
+      {
+        "sourceColumnName": "warranty_expiration",
+        "targetPropertyId": "5100130571381507563"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "batterystorageunits",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

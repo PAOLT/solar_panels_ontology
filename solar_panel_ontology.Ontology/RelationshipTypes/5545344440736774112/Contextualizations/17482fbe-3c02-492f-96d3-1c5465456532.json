@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "17482fbe-3c02-492f-96d3-1c5465456532",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "technician_certifications",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "TechnicianRef",
+      "targetPropertyId": "5533271643346251781"
+    },
+    {
+      "sourceColumnName": "CertificationRef",
+      "targetPropertyId": "5533271644429090023"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "CertificationRef",
+      "targetPropertyId": "5068360561270836794"
+    }
+  ]
+}

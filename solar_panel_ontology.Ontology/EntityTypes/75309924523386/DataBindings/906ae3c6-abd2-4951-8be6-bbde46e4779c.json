@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "906ae3c6-abd2-4951-8be6-bbde46e4779c",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "action_taken_by",
+        "targetPropertyId": "5134113910877796828"
+      },
+      {
+        "sourceColumnName": "action_timestamp",
+        "targetPropertyId": "5134113911255638234"
+      },
+      {
+        "sourceColumnName": "action_type",
+        "targetPropertyId": "5134113909560139304"
+      },
+      {
+        "sourceColumnName": "attachment_url",
+        "targetPropertyId": "5134113909657441437"
+      },
+      {
+        "sourceColumnName": "client_read_receipt",
+        "targetPropertyId": "5134113909335615427"
+      },
+      {
+        "sourceColumnName": "escalation_flag",
+        "targetPropertyId": "5134113909737777009"
+      },
+      {
+        "sourceColumnName": "is_public",
+        "targetPropertyId": "5134113912021893050"
+      },
+      {
+        "sourceColumnName": "message_content",
+        "targetPropertyId": "5134113909993867674"
+      },
+      {
+        "sourceColumnName": "new_status",
+        "targetPropertyId": "5134113911793518639"
+      },
+      {
+        "sourceColumnName": "previous_status",
+        "targetPropertyId": "5134113910109606816"
+      },
+      {
+        "sourceColumnName": "response_channel",
+        "targetPropertyId": "5134113912983393197"
+      },
+      {
+        "sourceColumnName": "sentiment_score",
+        "targetPropertyId": "5134113913112728349"
+      },
+      {
+        "sourceColumnName": "step_id",
+        "targetPropertyId": "5134113909934539050"
+      },
+      {
+        "sourceColumnName": "step_sequence",
+        "targetPropertyId": "5134113911911008306"
+      },
+      {
+        "sourceColumnName": "system_generated",
+        "targetPropertyId": "5134113909044494962"
+      },
+      {
+        "sourceColumnName": "tags",
+        "targetPropertyId": "5134113910133694924"
+      },
+      {
+        "sourceColumnName": "ticket_ref",
+        "targetPropertyId": "5134113909358592160"
+      },
+      {
+        "sourceColumnName": "time_spent_minutes",
+        "targetPropertyId": "5134113911903618439"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "ticketresolutionsteps",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "7a7517ef-9398-49f7-bade-d4b6bc1a4d44",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "closure_date",
+        "targetPropertyId": "2761660584021575911"
+      },
+      {
+        "sourceColumnName": "description_narrative",
+        "targetPropertyId": "2761660626355518522"
+      },
+      {
+        "sourceColumnName": "equipment_damaged_id",
+        "targetPropertyId": "2761660626748760053"
+      },
+      {
+        "sourceColumnName": "estimated_damage_cost_usd",
+        "targetPropertyId": "2761660626565097582"
+      },
+      {
+        "sourceColumnName": "immediate_action_taken",
+        "targetPropertyId": "2761660629495935532"
+      },
+      {
+        "sourceColumnName": "incident_date",
+        "targetPropertyId": "2761660629409094699"
+      },
+      {
+        "sourceColumnName": "incident_id",
+        "targetPropertyId": "2761660625833182814"
+      },
+      {
+        "sourceColumnName": "incident_time",
+        "targetPropertyId": "2761660626636206615"
+      },
+      {
+        "sourceColumnName": "incident_type",
+        "targetPropertyId": "2761660627145467102"
+      },
+      {
+        "sourceColumnName": "investigation_status",
+        "targetPropertyId": "2761660625856460137"
+      },
+      {
+        "sourceColumnName": "involved_person_count",
+        "targetPropertyId": "2761660626136497395"
+      },
+      {
+        "sourceColumnName": "lost_time_hours",
+        "targetPropertyId": "2761660629276181089"
+      },
+      {
+        "sourceColumnName": "medical_attention_required",
+        "targetPropertyId": "2761660626445274736"
+      },
+      {
+        "sourceColumnName": "osha_reportable",
+        "targetPropertyId": "2761660627827838217"
+      },
+      {
+        "sourceColumnName": "reporter_ref",
+        "targetPropertyId": "2761660625723257214"
+      },
+      {
+        "sourceColumnName": "root_cause_category",
+        "targetPropertyId": "2761660625669239058"
+      },
+      {
+        "sourceColumnName": "severity_level",
+        "targetPropertyId": "2761660626540051983"
+      },
+      {
+        "sourceColumnName": "site_ref",
+        "targetPropertyId": "2761660628712377387"
+      },
+      {
+        "sourceColumnName": "weather_contribution_factor",
+        "targetPropertyId": "2761660627778696640"
+      },
+      {
+        "sourceColumnName": "witness_statement_url",
+        "targetPropertyId": "2761660628715522784"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "safetyincidentreports",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

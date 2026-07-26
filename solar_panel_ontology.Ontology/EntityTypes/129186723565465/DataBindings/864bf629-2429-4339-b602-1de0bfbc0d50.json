@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "864bf629-2429-4339-b602-1de0bfbc0d50",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "executionStatus",
+        "targetPropertyId": "5575716113303604300"
+      },
+      {
+        "sourceColumnName": "NOTES",
+        "targetPropertyId": "5575716112811869207"
+      },
+      {
+        "sourceColumnName": "ProcedureLink",
+        "targetPropertyId": "5575716115410333509"
+      },
+      {
+        "sourceColumnName": "WorkOrderLink",
+        "targetPropertyId": "5575716113722133371"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "work_order_procedures",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

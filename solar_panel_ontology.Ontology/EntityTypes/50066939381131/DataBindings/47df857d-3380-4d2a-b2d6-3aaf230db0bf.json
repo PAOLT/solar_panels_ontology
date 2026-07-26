@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "47df857d-3380-4d2a-b2d6-3aaf230db0bf",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "COST_AT_TIME",
+        "targetPropertyId": "5386538995060043530"
+      },
+      {
+        "sourceColumnName": "PartRef",
+        "targetPropertyId": "5386538995512350971"
+      },
+      {
+        "sourceColumnName": "quantity_used",
+        "targetPropertyId": "5386538997422055688"
+      },
+      {
+        "sourceColumnName": "WorkOrderRef",
+        "targetPropertyId": "5386538997863599328"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "work_order_parts_usage",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

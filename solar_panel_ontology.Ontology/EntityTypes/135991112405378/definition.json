@@ -1,0 +1,612 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "135991112405378",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "plants",
+  "entityIdParts": [
+    "5109646062513636532"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5109646063119229757",
+      "name": "azmdeg",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Panel orientation relative to true north. Example: 169.8.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646060476713712",
+      "name": "cap_mw",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Total installed capacity in megawatts. Example: 257.58.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646062209266511",
+      "name": "complyflag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Compliance status with regulations. Possible values: Compliant, Non-Compliant, Under Review.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646064040926460",
+      "name": "docstate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Completeness status of plant documentation. Possible values: Complete, Missing, Partial.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646062834943771",
+      "name": "envtag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Environmental impact classification. Possible values: High, Low, Medium.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646061006770096",
+      "name": "goliveon",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. Date when the plant became operational. Example: 43159.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646060576436424",
+      "name": "insurstate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current insurance coverage status. Possible values: Covered, Expired, Partial.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646063499384863",
+      "name": "modhook",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Foreign-key referencing panel_models.ModKey. Links to panel model details.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646061409911197",
+      "name": "recyclenote",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Status of panel recycling program. NULL means the encoder does not report status or data are missing. Possible values: Available, In Development.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646062513636532",
+      "name": "sitekey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for the solar power plant. Example: SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646062505481853",
+      "name": "sitelabel",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Name or description of the solar facility. Example: Solar Plant West Davidport.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646063479377562",
+      "name": "tiltdeg",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Angle of panel tilt from horizontal. Example: 1.2.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646062088934478",
+      "name": "warrclaims",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. Number of warranty claims made. NULL means the encoder does not report status or data are missing. Possible values: 0.0, 1.0, 2.0, 3.0, 4.0, 5.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5109646061680408960",
+      "name": "warrstate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current status of equipment warranty. NULL means the encoder does not report status or data are missing. Possible values: Active, Claimed, Expired.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [
+    {
+      "id": "1295428793615436564",
+      "name": "cleancost",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Cleaning cost amount. Example: 1034.89.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428793605701372",
+      "name": "maintcost",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Maintenance cost amount. Example: 178.82.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428792047622689",
+      "name": "mtbfh",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Mean time between failures in hours. NULL means the encoder does not report status or data are missing. Example: 3713.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428790760747380",
+      "name": "mttrh",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Mean time to repair in hours. Example: 8.8.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428793339552334",
+      "name": "optpot",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Optimization potential assessment. Possible values: High, Low, Medium.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428791615059807",
+      "name": "replcost",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Component replacement cost. Example: 31529.13.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428793057076566",
+      "name": "revloss",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Revenue loss amount. Example: 13375.59.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1295428793349677309",
+      "name": "snapts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when snapshot was taken. Example: 43315.51482.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1316030294798392899",
+      "name": "env_snapshot",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "{\n        \u0022column_meaning\u0022: \u0022JSONB column. Bundles ambient weather, plane-of-array irradiance and soiling/atmospheric conditions measured at the plant into one JSONB object for performance-normalisation models.\u0022,\n        \u0022fields_meaning\u0022: {\n            \u0022temperatures\u0022: {\n                \u0022cell_temp_c\u0022: \u0022REAL. Solar cell temperature. NULL means the encoder does not report status or data are missing. Example: 47.3.\u0022,\n                \u0022ambient_temp_c\u0022: \u0022REAL. Ambient air temperature. Example: 41.2.\u0022\n            },\n            \u0022irradiance\u0022: {\n                \u0022ghi_w_m2\u0022: \u0022REAL. Solar irradiance measurement. NULL means the encoder does not report status or data are missing. Example: 530.4.\u0022,\n                \u0022dni_w_m2\u0022: \u0022REAL. Direct irradiance measurement. Example: 169.3.\u0022,\n                \u0022dhi_w_m2\u0022: \u0022REAL. Diffuse irradiance measurement. Example: 44.1.\u0022,\n                \u0022poa_irr_w_m2\u0022: \u0022REAL. Plane-of-array irradiance. Example: 135.1.\u0022\n            },\n            \u0022atmospheric\u0022: {\n                \u0022relative_humidity_pct\u0022: \u0022REAL. Relative humidity percentage. Example: 76.1.\u0022,\n                \u0022air_pressure_hpa\u0022: \u0022REAL. Atmospheric pressure measurement. Example: 1099.2.\u0022,\n                \u0022uv_index\u0022: \u0022REAL. UV index measurement. Example: 1.1.\u0022,\n                \u0022cloud_cover_pct\u0022: \u0022REAL. Cloud cover percentage. Example: 12.4.\u0022,\n                \u0022dust_density_kg_m3\u0022: \u0022REAL. Dust density measurement. Example: 0.056.\u0022\n            },\n            \u0022wind_rain_snow\u0022: {\n                \u0022wind_speed_m_s\u0022: \u0022REAL. Wind speed measurement. Example: 11.6.\u0022,\n                \u0022wind_dir_deg\u0022: \u0022REAL. Wind direction in degrees. Example: 249.3.\u0022,\n                \u0022rain_mm\u0022: \u0022REAL. Rainfall measurement in millimeters. Example: 41.3.\u0022,\n                \u0022snow_cover_pct\u0022: \u0022REAL. Snow cover percentage. Example: 24.8.\u0022\n            }\n        }\n    }",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1323121685271718301",
+      "name": "snapts_ec",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when snapshot was taken. Example: 43315.51482.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1342247374528503646",
+      "name": "elec_perf_snapshot",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "{\n        \u0022column_meaning\u0022: \u0022JSONB column. Stores all IV-curve parameters, inverter \u0026 grid metrics, efficiency losses and energy-yield KPIs captured for a single timestamp, so analytics engines can fetch the entire electrical-health view from one JSONB column.\u0022,\n        \u0022fields_meaning\u0022: {\n            \u0022efficiency\u0022: {\n                \u0022instant_eff_pct\u0022: \u0022REAL. Current operational efficiency percentage. Example: 18.54.\u0022,\n                \u0022eff_loss_pct\u0022: \u0022REAL. Efficiency loss since installation. Example: 2.32.\u0022,\n                \u0022cumulative_deg_pct\u0022: \u0022REAL. Cumulative degradation percentage. Example: 14.69.\u0022,\n                \u0022soil_loss_pct\u0022: \u0022REAL. Power loss due to soiling. Example: 13.41.\u0022,\n                \u0022spectral_mismatch\u0022: \u0022TEXT. Specification mismatch factor. Example: 1.005.\u0022\n            },\n            \u0022power\u0022: {\n                \u0022power_now_w\u0022: \u0022REAL. Current power output in watts. NULL means the encoder does not report status or data are missing. Example: 554.51.\u0022,\n                \u0022power_loss_w\u0022: \u0022REAL. Power loss since installation. NULL means the encoder does not report status or data are missing. Example: 95.49.\u0022\n            },\n            \u0022iv_curve\u0022: {\n                \u0022isc_initial_a\u0022: \u0022REAL. Initial short-circuit current. Example: 9.09.\u0022,\n                \u0022isc_now_a\u0022: \u0022REAL. Current short-circuit current. Example: 8.51.\u0022,\n                \u0022voc_initial_v\u0022: \u0022REAL. Initial open-circuit voltage. NULL means the encoder does not report status or data are missing. Example: 49.74.\u0022,\n                \u0022voc_now_v\u0022: \u0022REAL. Current open-circuit voltage. Example: 43.32.\u0022,\n                \u0022imp_initial_a\u0022: \u0022REAL. Initial current at maximum power. Example: 9.17.\u0022,\n                \u0022imp_now_a\u0022: \u0022REAL. Current at maximum power. NULL means the encoder does not report status or data are missing. Example: 7.21.\u0022,\n                \u0022vmp_initial_v\u0022: \u0022REAL. Initial voltage at maximum power. Example: 38.48.\u0022,\n                \u0022vmp_now_v\u0022: \u0022REAL. Current voltage at maximum power. Example: 36.98.\u0022,\n                \u0022fill_factor_initial\u0022: \u0022REAL. Initial fill factor. Example: 0.773.\u0022,\n                \u0022fill_factor_now\u0022: \u0022REAL. Current fill factor. Example: 0.71.\u0022,\n                \u0022series_res_ohm\u0022: \u0022TEXT. Series resistance in ohms. Example: 0.174.\u0022,\n                \u0022shunt_res_ohm\u0022: \u0022REAL. Shunt resistance in ohms. Example: 437.3.\u0022\n            },\n            \u0022inverter\u0022: {\n                \u0022inverter_eff_pct\u0022: \u0022REAL. Inverter efficiency percentage. Example: 98.43.\u0022,\n                \u0022power_factor\u0022: \u0022REAL. Inverter power factor. NULL means the encoder does not report status or data are missing. Example: 0.979.\u0022,\n                \u0022inverter_temp_c\u0022: \u0022REAL. Inverter operating temperature. Example: 49.1.\u0022\n            },\n            \u0022grid\u0022: {\n                \u0022grid_voltage_v\u0022: \u0022REAL. Grid voltage measurement. NULL means the encoder does not report status or data are missing. Example: 226.9.\u0022,\n                \u0022grid_frequency_hz\u0022: \u0022REAL. Grid frequency measurement. Example: 49.73.\u0022,\n                \u0022power_quality_idx\u0022: \u0022REAL. Power quality index. Example: 0.467.\u0022,\n                \u0022harmonic_distortion_pct\u0022: \u0022REAL. Harmonic distortion percentage. Example: 4.01.\u0022,\n                \u0022reactive_power_var\u0022: \u0022REAL. Reactive power measurement. NULL means the encoder does not report status or data are missing. Example: 33.0.\u0022\n            },\n            \u0022energy_yield\u0022: {\n                \u0022energy_yield_kwh\u0022: \u0022REAL. Energy yield in watt-hours. Example: 15.64.\u0022,\n                \u0022performance_ratio\u0022: \u0022REAL. Performance ratio. NULL means the encoder does not report status or data are missing. Example: 0.846.\u0022,\n                \u0022specific_yield_kwh_kw\u0022: \u0022REAL. Specific yield in kWh/kWp. Example: 5.18.\u0022,\n                \u0022capacity_factor_pct\u0022: \u0022REAL. Capacity factor percentage. Example: 27.47.\u0022,\n                \u0022availability_pct\u0022: \u0022REAL. System availability percentage. Example: 97.73.\u0022\n            }\n        }\n    }",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1342247376083031497",
+      "name": "mech_health_snapshot",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "{\n        \u0022column_meaning\u0022: \u0022JSONB column. Captures tracker status, glass / back-sheet health, electrical connections and cleaning history for a panel string or block at a given snapshot, allowing O\u0026M teams to query a single JSONB field for mechanical diagnostics.\u0022,\n        \u0022fields_meaning\u0022: {\n            \u0022tracker\u0022: {\n                \u0022tracker_state\u0022: \u0022TEXT. Tracking system operational status. Possible values: Error, Maintenance, Normal.\u0022,\n                \u0022tracker_angle_deg\u0022: \u0022REAL. Tracking system deviation angle. Example: 20.5.\u0022\n            },\n            \u0022module_surface\u0022: {\n                \u0022backsheet_condition\u0022: \u0022TEXT. Backsheet material condition assessment. Possible values: Fair, Good, Poor.\u0022,\n                \u0022glass_condition\u0022: \u0022TEXT. Front glass condition assessment. Possible values: Clear, Damaged, Dusty.\u0022,\n                \u0022encapsulant_yellowing\u0022: \u0022TEXT. Encapsulant yellowing status. NULL means the encoder does not report status or data are missing. Possible values: Mild, Severe.\u0022,\n                \u0022delamination_status\u0022: \u0022TEXT. Delamination status. NULL means the encoder does not report status or data are missing. Possible values: Major, Minor.\u0022,\n                \u0022busbar_corrosion\u0022: \u0022TEXT. Busbar corrosion status. NULL means the encoder does not report status or data are missing. Possible values: Severe, Visible.\u0022,\n                \u0022hotspot_count\u0022: \u0022BIGINT. Number of detected hot spots. NULL means the encoder does not report status or data are missing. Example: 1.0.\u0022,\n                \u0022microcrack_count\u0022: \u0022BIGINT. Count of microcracks detected. Example: 7.0.\u0022,\n                \u0022snail_trail_severity\u0022: \u0022TEXT. Snail trail severity. NULL means the encoder does not report status or data are missing. Possible values: Heavy, Light.\u0022,\n                \u0022pid_severity\u0022: \u0022TEXT. Potential induced degradation severity. NULL means the encoder does not report status or data are missing. Possible values: High, Low.\u0022,\n                \u0022lid_status\u0022: \u0022TEXT. Light-induced degradation status. Possible values: Ongoing, Stabilized, Unknown.\u0022\n            },\n            \u0022electrical_integrity\u0022: {\n                \u0022bypass_diode_status\u0022: \u0022TEXT. Bypass diode functionality status. Possible values: Failed, Normal, Partial.\u0022,\n                \u0022junction_box_condition\u0022: \u0022TEXT. Junction box condition assessment. Possible values: Fair, Good, Poor.\u0022,\n                \u0022cable_condition\u0022: \u0022TEXT. Cable condition assessment. NULL means the encoder does not report status or data are missing. Possible values: Fair, Good, Poor.\u0022,\n                \u0022connector_condition\u0022: \u0022TEXT. Connector condition assessment. Possible values: Fair, Good, Poor.\u0022,\n                \u0022grounding_status\u0022: \u0022TEXT. Grounding system status. Possible values: Check Required, Failed, Normal.\u0022\n            },\n            \u0022mount_cleaning\u0022: {\n                \u0022mount_structure_status\u0022: \u0022TEXT. Mounting structure condition. Possible values: Check Required, Stable, Unstable.\u0022,\n                \u0022cleaning_cycle_days\u0022: \u0022BIGINT. Number of cleaning cycles performed. Example: 38.\u0022,\n                \u0022last_clean_date\u0022: \u0022DATE. Date of last cleaning. Example: 45671.\u0022\n            }\n        }\n    }",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222782195643736",
+      "name": "carbon_footprint_tons",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The estimated operational carbon footprint in tons of CO2 equivalent. Example: 5.3 tons CO2e.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222778817896724",
+      "name": "community_summary",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A summary of community engagement activities for the period. Example: Hosted community open house.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222782014591838",
+      "name": "ENTRY_TIMESTAMP",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the report record was entered into the system. Example: 2023-04-12 14:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222779307403733",
+      "name": "land_impact_notes",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Notes on land use, erosion, and vegetation impact. Example: No significant impact noted.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222779024640301",
+      "name": "QUARTER",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The quarter of the year covered by the report (Q1, Q2, Q3, Q4). Possible values: Q1, Q2, Q3, Q4.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222782145112132",
+      "name": "REPORT_AUTHOR",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The name of the person who authored the report. Possible values: Emily White, John Green, Maria Garcia, Sam Johnson.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222778501821889",
+      "name": "report_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current status of the report. Possible values: Approved, Draft, Submitted.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222781176208570",
+      "name": "reporting_year",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The year covered by the report. Possible values: 2022, 2023, 2024.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222781140418044",
+      "name": "ReportNum",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for an environmental report. Example: ER-23Q1-SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222780647397843",
+      "name": "SUBMITTED_DATE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the report was submitted to a regulatory body. Example: 2023-04-12.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222781709127982",
+      "name": "verified_by",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The name of the third-party firm that verified the report\u0027s data. Possible values: EcoSure LLC, EcoVerify Inc, GreenLeaf Consulting.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222779433249548",
+      "name": "WASTE_RECYCLED_KG",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The total weight of waste recycled in kilograms. Example: 155.8 kg.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222779269974009",
+      "name": "water_usage_liters",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BIGINT. Total water usage in liters for the period, primarily for panel cleaning. Example: 510,234 Liters.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3007222780363665800",
+      "name": "WILDLIFE_INCIDENTS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of recorded incidents involving wildlife. Possible values: 0, 1, 2.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503669500593684",
+      "name": "AUDIT_TYPE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The type of compliance audit performed. Possible values: Environmental, Financial, Grid Code, Safety.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503672935600981",
+      "name": "auditDate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the audit was conducted. Example: 20-Feb-22.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503672298539327",
+      "name": "auditingFirm",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The name of the external firm that conducted the audit. Possible values: EcoSure LLC, GreenLeaf Consulting, GridComply Inc., PowerFinance Auditors, SafeGrid Audits.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503670058201501",
+      "name": "AuditTag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a compliance audit. Example: AUD-22-001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503672418220914",
+      "name": "cap_required",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. A flag indicating if a corrective action plan is required. Possible values: False, True.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503673020405656",
+      "name": "entry_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the audit record was entered into the system. Example: 2022-03-05 11:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503670477393127",
+      "name": "FOLLOW_UP_DUE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The due date for a follow-up audit, if required. Example: 15-Sep-22.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503668938186724",
+      "name": "LEAD_AUDITOR",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The name of the lead auditor. Possible values: David Lee, Laura Palmer, Maria Garcia, Sam Johnson, Sarah Chen, Tom Harris.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503671315623906",
+      "name": "major_findings",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of major non-compliance findings. Possible values: 0, 1, 2, 3, 4.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503672388137315",
+      "name": "MINOR_FINDINGS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of minor non-compliance findings. Example: 1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503672654185672",
+      "name": "report_published",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the final audit report was published. Example: 05-Mar-22.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503671430479854",
+      "name": "REPORT_URL",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A URL or file path to the full audit report. Example: /audits/AUD-22-001.pdf.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503671352530884",
+      "name": "result",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The final result or outcome of the audit. Possible values: Failed, Passed, Passed with Remarks.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3021503668943570744",
+      "name": "SCORE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. The numerical score of the audit, if applicable. Example: 98.5.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "untypedProperties": []
+}

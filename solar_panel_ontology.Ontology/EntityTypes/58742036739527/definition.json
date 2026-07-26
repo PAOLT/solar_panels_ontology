@@ -1,0 +1,193 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "58742036739527",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "inverter_models",
+  "entityIdParts": [
+    "5107172346797764220"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5107172345334221564",
+      "name": "created_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the inverter model record was created. Example: 2019-01-15 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172346455051667",
+      "name": "datasheet",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A URL or file path to the technical datasheet. Example: /sheets/INV-M-A1.pdf.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172346785308784",
+      "name": "Dimensions",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The physical dimensions of the inverter in centimeters (LxWxH). Example: 70x50x30.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172346925763690",
+      "name": "EFFICIENCY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. The peak or weighted efficiency percentage of the inverter. Example: 98.5.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172344632644337",
+      "name": "EOL_DATE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The End-of-Life date when the manufacturer ceases support. NULL if still active. Example: 01-Aug-32.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172346797764220",
+      "name": "InverterModelTag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a specific model of inverter. Example: INV-M-A1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172343745805754",
+      "name": "last_modified_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the inverter model record. Example: 2023-10-10 10:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172343605740180",
+      "name": "MAX_INPUT_VOLTAGE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "REAL. The maximum DC input voltage the inverter can handle. Possible values: 1000, 1100, 1500, 42, 45, 480, 500, 60, 600, 64.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172344129889865",
+      "name": "max_power_kw",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The maximum continuous power output of the inverter in kilowatts. Example: 100 kW.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172345114169152",
+      "name": "modelName",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The specific model name or number of the inverter. Example: SE100K-US.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172347298337900",
+      "name": "mppt_channels",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of Maximum Power Point Tracker (MPPT) channels. Possible values: 1, 10, 12, 2, 3, 4, 5, 6, 8, 9.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172346269313930",
+      "name": "PRODUCT_LINE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The product family or series the inverter model belongs to. Example: Synergy.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172347722750637",
+      "name": "releaseDate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the inverter model was first released to the market. Example: 20-May-19.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172345978228067",
+      "name": "VendorCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E asset_manufacturers.MfrCode. The code of the inverter\u0027s manufacturer. Example: MFR-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172345210191859",
+      "name": "WARRANTY_YEARS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BIGINT. The standard warranty period for the inverter model in years. Possible values: 10 Years, 10-year, 12 Years, 15 Years, 25-year, 40-year.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5107172345231577694",
+      "name": "weight_kg",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. The weight of the inverter in kilograms. Example: 78.0.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

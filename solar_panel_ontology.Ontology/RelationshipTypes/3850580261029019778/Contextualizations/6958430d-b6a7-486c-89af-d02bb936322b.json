@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "6958430d-b6a7-486c-89af-d02bb936322b",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "maintenance_procedures",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "ProcedureCode",
+      "targetPropertyId": "5080279094599797808"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "Author_Ref",
+      "targetPropertyId": "5076578758882401660"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "cdb66d0c-ca77-44bb-9fed-cf208805c93b",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "alrtcnt",
+        "targetPropertyId": "1368405362544712261"
+      },
+      {
+        "sourceColumnName": "alrtstate",
+        "targetPropertyId": "1368405364325862182"
+      },
+      {
+        "sourceColumnName": "maintprio",
+        "targetPropertyId": "1368405362307437001"
+      },
+      {
+        "sourceColumnName": "OrderNum",
+        "targetPropertyId": "5083449615180512387"
+      },
+      {
+        "sourceColumnName": "replprio",
+        "targetPropertyId": "1368405364675226714"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "plant_record_alerts",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

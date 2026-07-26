@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "c2ad6a7b-b4b3-47c6-8070-37b7de393f5f",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "degyrrate",
+        "targetPropertyId": "5092637572868358070"
+      },
+      {
+        "sourceColumnName": "effpct",
+        "targetPropertyId": "5092637571154577210"
+      },
+      {
+        "sourceColumnName": "makertag",
+        "targetPropertyId": "5092637572714529784"
+      },
+      {
+        "sourceColumnName": "modkey",
+        "targetPropertyId": "5092637572832309221"
+      },
+      {
+        "sourceColumnName": "nomoptempc",
+        "targetPropertyId": "5092637572841841087"
+      },
+      {
+        "sourceColumnName": "pnlkind",
+        "targetPropertyId": "5092637572580888436"
+      },
+      {
+        "sourceColumnName": "rated_w",
+        "targetPropertyId": "5092637572147396415"
+      },
+      {
+        "sourceColumnName": "tempcoeff",
+        "targetPropertyId": "5092637571859494489"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "panel_models",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "193779065409751",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "clients",
+  "entityIdParts": [
+    "5124548798642364431"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5124548800943961854",
+      "name": "client_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The classification of the client. Possible values: Corporate, Government, Utility.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548798642364431",
+      "name": "ClientCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a client or customer. Example: C1001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548801802760403",
+      "name": "ClientName",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The legal or common name of the client company or entity. Example: Global Utility Partners.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548800983671243",
+      "name": "contact_details",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Contains the primary contact information and billing address for a client.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548799719271434",
+      "name": "CreditRating",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The client\u0027s credit rating as assessed by a rating agency. Possible values: A, AA\u002B, AAA, BBB.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548801202784799",
+      "name": "CUSTOMER_SINCE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date when the entity officially became a client. Example: 01/15/2018.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548799138108207",
+      "name": "INDUSTRY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The industry sector in which the client operates. Possible values: Education, Energy, Logistics, Manufacturing, Public Sector, Public Services, Retail, Technology.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548799640268237",
+      "name": "LAST_MODIFIED",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the client record. Example: 2024-05-15 09:30:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5124548799703675398",
+      "name": "record_created_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the client record was first created in the system. Example: 2018-01-10 10:00:00.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

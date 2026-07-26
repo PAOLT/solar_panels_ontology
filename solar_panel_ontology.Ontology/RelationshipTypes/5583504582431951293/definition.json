@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5583504582431951293",
+  "name": "executed_procedure_to_work_order",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129186723565465"
+  },
+  "target": {
+    "entityTypeId": "145752151256458"
+  }
+}

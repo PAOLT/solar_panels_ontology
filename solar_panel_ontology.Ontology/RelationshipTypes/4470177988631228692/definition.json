@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "4470177988631228692",
+  "name": "energy_tariffs_to_ppa_contracts",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "236508134603693"
+  },
+  "target": {
+    "entityTypeId": "100299290210877"
+  }
+}

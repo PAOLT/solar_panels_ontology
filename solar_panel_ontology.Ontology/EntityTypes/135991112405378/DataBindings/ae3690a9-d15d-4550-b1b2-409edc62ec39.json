@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "ae3690a9-d15d-4550-b1b2-409edc62ec39",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "SUBMITTED_DATE",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "carbon_footprint_tons",
+        "targetPropertyId": "3007222782195643736"
+      },
+      {
+        "sourceColumnName": "community_summary",
+        "targetPropertyId": "3007222778817896724"
+      },
+      {
+        "sourceColumnName": "ENTRY_TIMESTAMP",
+        "targetPropertyId": "3007222782014591838"
+      },
+      {
+        "sourceColumnName": "land_impact_notes",
+        "targetPropertyId": "3007222779307403733"
+      },
+      {
+        "sourceColumnName": "QUARTER",
+        "targetPropertyId": "3007222779024640301"
+      },
+      {
+        "sourceColumnName": "REPORT_AUTHOR",
+        "targetPropertyId": "3007222782145112132"
+      },
+      {
+        "sourceColumnName": "report_status",
+        "targetPropertyId": "3007222778501821889"
+      },
+      {
+        "sourceColumnName": "reporting_year",
+        "targetPropertyId": "3007222781176208570"
+      },
+      {
+        "sourceColumnName": "ReportNum",
+        "targetPropertyId": "3007222781140418044"
+      },
+      {
+        "sourceColumnName": "SUBMITTED_DATE",
+        "targetPropertyId": "3007222780647397843"
+      },
+      {
+        "sourceColumnName": "verified_by",
+        "targetPropertyId": "3007222781709127982"
+      },
+      {
+        "sourceColumnName": "WASTE_RECYCLED_KG",
+        "targetPropertyId": "3007222779433249548"
+      },
+      {
+        "sourceColumnName": "water_usage_liters",
+        "targetPropertyId": "3007222779269974009"
+      },
+      {
+        "sourceColumnName": "WILDLIFE_INCIDENTS",
+        "targetPropertyId": "3007222780363665800"
+      },
+      {
+        "sourceColumnName": "FacilityTag",
+        "targetPropertyId": "5109646062513636532"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "environmental_reports",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

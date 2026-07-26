@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "43a67d01-7d9b-4b85-bbd6-2dc0f82109fb",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "financial_ledger",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "LinkedSite",
+      "targetPropertyId": "5109646062513636532"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "TxnRef",
+      "targetPropertyId": "5127954487891131703"
+    }
+  ]
+}

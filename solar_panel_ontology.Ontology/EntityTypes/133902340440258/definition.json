@@ -1,0 +1,171 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "133902340440258",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "weather_stations",
+  "entityIdParts": [
+    "5095816015696480007"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5095816015231781089",
+      "name": "assetStatus",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current operational status of the station. Possible values: Maintenance, Operational.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816014483614031",
+      "name": "FIRMWARE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current firmware version of the station\u0027s data logger. Example: v3.2.1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816013581453345",
+      "name": "INSTALL_DATE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the weather station was installed. Example: 2018-02-28.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816015731107696",
+      "name": "LAST_CALIBRATION",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the station\u0027s sensors were last calibrated. Example: 2024-01-10.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816013863300035",
+      "name": "location_coordinates",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Contains the geographic location of the weather station, including latitude, longitude, and elevation.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816015561400703",
+      "name": "LOG_INTERVAL_SEC",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The interval in seconds at which the station logs data. Possible values: 30, 300, 60, 600.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816013121647366",
+      "name": "MakerCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E asset_manufacturers.MfrCode. The code of the station\u0027s manufacturer. Possible values: MFR-15, MFR-16, MFR-17, MFR-29.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816012685004352",
+      "name": "MODEL",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The model name of the weather station. Possible values: CHP1 Pyrheliometer, CMP10 Pyranometer, CMP6 Pyranometer, CS1000 Weather Sensor, CS120 Visibility Sensor, MetData1 Weather Station, SR20 Pyranometer, SR30 Pyranometer, WXT530 Series, WXT536 Weather Transmitter.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816014023579355",
+      "name": "next_calibration_due",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the next calibration is due. Example: 2025-01-10.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816012732671905",
+      "name": "plant_site_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E plants.sitekey. The plant where the station is located. Example: SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816015232989667",
+      "name": "protocol",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The communication protocol used by the station. Possible values: API, DNP3, FTP, Modbus.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816015784577684",
+      "name": "PURCHASE_COST",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. The original purchase cost of the weather station. Possible values: 10500.0, 11000.0, 12000.0, 12500.0, 6200.0, 7500.0, 7800.0, 8200.0, 9500.0, 9800.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816012379665970",
+      "name": "serial_num",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The unique serial number of the weather station unit. Example: WSN-A12345.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5095816015696480007",
+      "name": "StationCode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a weather station. Example: WS-SP9227.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

@@ -1,0 +1,92 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "6f7f4ef7-eb40-45c6-87d7-d92063884f1b",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "appeal_filed",
+        "targetPropertyId": "1916959172919929349"
+      },
+      {
+        "sourceColumnName": "approved_amount_usd",
+        "targetPropertyId": "1916959176617476444"
+      },
+      {
+        "sourceColumnName": "banking_ref_id",
+        "targetPropertyId": "1916959176010868370"
+      },
+      {
+        "sourceColumnName": "claim_id",
+        "targetPropertyId": "1916959175949143535"
+      },
+      {
+        "sourceColumnName": "claim_status",
+        "targetPropertyId": "1916959174056449290"
+      },
+      {
+        "sourceColumnName": "claim_type",
+        "targetPropertyId": "1916959174810716642"
+      },
+      {
+        "sourceColumnName": "defect_description",
+        "targetPropertyId": "1916959175265857156"
+      },
+      {
+        "sourceColumnName": "defective_part_serial",
+        "targetPropertyId": "1916959173313534923"
+      },
+      {
+        "sourceColumnName": "denial_reason",
+        "targetPropertyId": "1916959173853157920"
+      },
+      {
+        "sourceColumnName": "evidence_log_url",
+        "targetPropertyId": "1916959173940066745"
+      },
+      {
+        "sourceColumnName": "evidence_photo_url",
+        "targetPropertyId": "1916959172890924362"
+      },
+      {
+        "sourceColumnName": "filing_date",
+        "targetPropertyId": "1916959172917766568"
+      },
+      {
+        "sourceColumnName": "internal_negotiator",
+        "targetPropertyId": "1916959174062424131"
+      },
+      {
+        "sourceColumnName": "manufacturer_ref",
+        "targetPropertyId": "1916959173482176229"
+      },
+      {
+        "sourceColumnName": "manufacturer_response_days",
+        "targetPropertyId": "1916959173523496532"
+      },
+      {
+        "sourceColumnName": "replacement_part_sku",
+        "targetPropertyId": "1916959174907757590"
+      },
+      {
+        "sourceColumnName": "requested_amount_usd",
+        "targetPropertyId": "1916959176513496227"
+      },
+      {
+        "sourceColumnName": "rma_tracking_number",
+        "targetPropertyId": "1916959174055678463"
+      },
+      {
+        "sourceColumnName": "settlement_date",
+        "targetPropertyId": "1916959173054001384"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "warrantyclaimfilings",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

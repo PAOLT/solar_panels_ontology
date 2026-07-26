@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "c30e3634-02f0-4100-aa91-cbdbaef311f7",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "Approver_Ref",
+        "targetPropertyId": "5080279096220527536"
+      },
+      {
+        "sourceColumnName": "Author_Ref",
+        "targetPropertyId": "5080279094511982351"
+      },
+      {
+        "sourceColumnName": "CATEGORY",
+        "targetPropertyId": "5080279095537228737"
+      },
+      {
+        "sourceColumnName": "creation_date",
+        "targetPropertyId": "5080279095326431395"
+      },
+      {
+        "sourceColumnName": "description",
+        "targetPropertyId": "5080279094789995252"
+      },
+      {
+        "sourceColumnName": "doc_url",
+        "targetPropertyId": "5080279092523104366"
+      },
+      {
+        "sourceColumnName": "ESTIMATED_HOURS",
+        "targetPropertyId": "5080279096090893299"
+      },
+      {
+        "sourceColumnName": "frequency_in_days",
+        "targetPropertyId": "5080279093763003512"
+      },
+      {
+        "sourceColumnName": "IS_ACTIVE",
+        "targetPropertyId": "5080279093541415447"
+      },
+      {
+        "sourceColumnName": "LAST_REVISION",
+        "targetPropertyId": "5080279094959986953"
+      },
+      {
+        "sourceColumnName": "proc_version",
+        "targetPropertyId": "5080279093485669980"
+      },
+      {
+        "sourceColumnName": "procedure_name",
+        "targetPropertyId": "5080279092912863900"
+      },
+      {
+        "sourceColumnName": "ProcedureCode",
+        "targetPropertyId": "5080279094599797808"
+      },
+      {
+        "sourceColumnName": "requiredTools",
+        "targetPropertyId": "5080279092950773882"
+      },
+      {
+        "sourceColumnName": "SAFETY_WARNINGS",
+        "targetPropertyId": "5080279095342374328"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "maintenance_procedures",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

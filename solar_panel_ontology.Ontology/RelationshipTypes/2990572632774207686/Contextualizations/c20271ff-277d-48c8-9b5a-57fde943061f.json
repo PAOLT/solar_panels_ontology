@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "c20271ff-277d-48c8-9b5a-57fde943061f",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "batterystorageunits",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "site_ref",
+      "targetPropertyId": "5109646062513636532"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "storage_unit_id",
+      "targetPropertyId": "5100130572726996410"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5622355593266808164",
+  "name": "technician_to_session",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "151344123787957"
+  },
+  "target": {
+    "entityTypeId": "126828034764086"
+  }
+}

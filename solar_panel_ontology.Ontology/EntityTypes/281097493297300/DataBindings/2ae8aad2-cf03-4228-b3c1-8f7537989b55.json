@@ -1,0 +1,60 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "2ae8aad2-cf03-4228-b3c1-8f7537989b55",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "contact_points",
+        "targetPropertyId": "5116347592289516976"
+      },
+      {
+        "sourceColumnName": "COUNTRY",
+        "targetPropertyId": "5116347593428512413"
+      },
+      {
+        "sourceColumnName": "created_at",
+        "targetPropertyId": "5116347593542395987"
+      },
+      {
+        "sourceColumnName": "HQ_Address",
+        "targetPropertyId": "5116347594006382024"
+      },
+      {
+        "sourceColumnName": "LEGAL_NAME",
+        "targetPropertyId": "5116347592021835175"
+      },
+      {
+        "sourceColumnName": "mfr_name",
+        "targetPropertyId": "5116347594777176729"
+      },
+      {
+        "sourceColumnName": "MfrCode",
+        "targetPropertyId": "5116347594554434437"
+      },
+      {
+        "sourceColumnName": "StockSymbol",
+        "targetPropertyId": "5116347595052820250"
+      },
+      {
+        "sourceColumnName": "UPDATED_AT",
+        "targetPropertyId": "5116347595748431575"
+      },
+      {
+        "sourceColumnName": "website_url",
+        "targetPropertyId": "5116347593539998734"
+      },
+      {
+        "sourceColumnName": "yearFounded",
+        "targetPropertyId": "5116347592133469880"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "asset_manufacturers",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

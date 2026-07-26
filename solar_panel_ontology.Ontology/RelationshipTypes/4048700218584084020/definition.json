@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "4048700218584084020",
+  "name": "author_technicians_to_maintenance_procedures",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "151344123787957"
+  },
+  "target": {
+    "entityTypeId": "273388742516841"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "0168d2b6-974e-48d4-bea3-b8735cf415a8",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "warrantyclaimfilings",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "work_order_ref",
+      "targetPropertyId": "5083449615180512387"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "claim_id",
+      "targetPropertyId": "1916959175949143535"
+    }
+  ]
+}

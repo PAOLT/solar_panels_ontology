@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "de5e16b3-657a-4342-86a6-ccb86498f765",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "category",
+        "targetPropertyId": "5068360559787538797"
+      },
+      {
+        "sourceColumnName": "CERT_IDENTIFIER",
+        "targetPropertyId": "5068360562264957886"
+      },
+      {
+        "sourceColumnName": "CERT_LEVEL",
+        "targetPropertyId": "5068360561743848777"
+      },
+      {
+        "sourceColumnName": "CertCode",
+        "targetPropertyId": "5068360561270836794"
+      },
+      {
+        "sourceColumnName": "certification_name",
+        "targetPropertyId": "5068360561253481921"
+      },
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "5068360559723602672"
+      },
+      {
+        "sourceColumnName": "DESCRIPTION",
+        "targetPropertyId": "5068360560261235873"
+      },
+      {
+        "sourceColumnName": "isRenewable",
+        "targetPropertyId": "5068360561129840527"
+      },
+      {
+        "sourceColumnName": "issuer_website",
+        "targetPropertyId": "5068360560251183463"
+      },
+      {
+        "sourceColumnName": "IssuingBody",
+        "targetPropertyId": "5068360558097537851"
+      },
+      {
+        "sourceColumnName": "LAST_UPDATED",
+        "targetPropertyId": "5068360561601212595"
+      },
+      {
+        "sourceColumnName": "RENEWAL_COST",
+        "targetPropertyId": "5068360560655215466"
+      },
+      {
+        "sourceColumnName": "required_training_hours",
+        "targetPropertyId": "5068360559069284183"
+      },
+      {
+        "sourceColumnName": "Requires_Cert_Code",
+        "targetPropertyId": "5068360559897657189"
+      },
+      {
+        "sourceColumnName": "validity_months",
+        "targetPropertyId": "5068360559741959538"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "certifications",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

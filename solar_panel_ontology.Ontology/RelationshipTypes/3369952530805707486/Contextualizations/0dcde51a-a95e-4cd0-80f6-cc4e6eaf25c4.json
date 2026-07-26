@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "0dcde51a-a95e-4cd0-80f6-cc4e6eaf25c4",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "ticketresolutionsteps",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "step_id",
+      "targetPropertyId": "5134113909934539050"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "ticket_ref",
+      "targetPropertyId": "5131100554293068354"
+    }
+  ]
+}

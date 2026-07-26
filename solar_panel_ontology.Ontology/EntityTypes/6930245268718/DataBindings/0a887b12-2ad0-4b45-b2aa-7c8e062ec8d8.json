@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "0a887b12-2ad0-4b45-b2aa-7c8e062ec8d8",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "actual_arrival_date",
+        "targetPropertyId": "5113286970198817979"
+      },
+      {
+        "sourceColumnName": "cargo_type",
+        "targetPropertyId": "5113286970886657410"
+      },
+      {
+        "sourceColumnName": "carrier_name",
+        "targetPropertyId": "5113286970633226587"
+      },
+      {
+        "sourceColumnName": "container_number",
+        "targetPropertyId": "5113286969068640175"
+      },
+      {
+        "sourceColumnName": "customs_clearance_status",
+        "targetPropertyId": "5113286971742682911"
+      },
+      {
+        "sourceColumnName": "damaged_on_arrival",
+        "targetPropertyId": "5113286971571765154"
+      },
+      {
+        "sourceColumnName": "declared_value_usd",
+        "targetPropertyId": "5113286972089007856"
+      },
+      {
+        "sourceColumnName": "destination_plant_ref",
+        "targetPropertyId": "5113286968656137138"
+      },
+      {
+        "sourceColumnName": "expected_arrival_date",
+        "targetPropertyId": "5113286971125502468"
+      },
+      {
+        "sourceColumnName": "incoterms",
+        "targetPropertyId": "5113286970548166886"
+      },
+      {
+        "sourceColumnName": "insurance_policy_id",
+        "targetPropertyId": "5113286972121127586"
+      },
+      {
+        "sourceColumnName": "manufacturer_ref",
+        "targetPropertyId": "5113286971361638157"
+      },
+      {
+        "sourceColumnName": "pallet_count",
+        "targetPropertyId": "5113286968821963383"
+      },
+      {
+        "sourceColumnName": "receiving_clerk_signature",
+        "targetPropertyId": "5113286972009791541"
+      },
+      {
+        "sourceColumnName": "shipment_create_date",
+        "targetPropertyId": "5113286970405748194"
+      },
+      {
+        "sourceColumnName": "shipment_id",
+        "targetPropertyId": "5113286970533859383"
+      },
+      {
+        "sourceColumnName": "shipment_status",
+        "targetPropertyId": "5113286972401922221"
+      },
+      {
+        "sourceColumnName": "shipping_cost_usd",
+        "targetPropertyId": "5113286969630589431"
+      },
+      {
+        "sourceColumnName": "total_weight_kg",
+        "targetPropertyId": "5113286970950405601"
+      },
+      {
+        "sourceColumnName": "tracking_number",
+        "targetPropertyId": "5113286970821947499"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "supplychainshipments",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

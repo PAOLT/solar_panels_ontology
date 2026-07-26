@@ -1,0 +1,77 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "492e3cfc-6ba3-4509-af6c-b1910306da88",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "entry_ts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "AUDIT_TYPE",
+        "targetPropertyId": "3021503669500593684"
+      },
+      {
+        "sourceColumnName": "auditDate",
+        "targetPropertyId": "3021503672935600981"
+      },
+      {
+        "sourceColumnName": "auditingFirm",
+        "targetPropertyId": "3021503672298539327"
+      },
+      {
+        "sourceColumnName": "AuditTag",
+        "targetPropertyId": "3021503670058201501"
+      },
+      {
+        "sourceColumnName": "cap_required",
+        "targetPropertyId": "3021503672418220914"
+      },
+      {
+        "sourceColumnName": "entry_ts",
+        "targetPropertyId": "3021503673020405656"
+      },
+      {
+        "sourceColumnName": "FOLLOW_UP_DUE",
+        "targetPropertyId": "3021503670477393127"
+      },
+      {
+        "sourceColumnName": "LEAD_AUDITOR",
+        "targetPropertyId": "3021503668938186724"
+      },
+      {
+        "sourceColumnName": "major_findings",
+        "targetPropertyId": "3021503671315623906"
+      },
+      {
+        "sourceColumnName": "MINOR_FINDINGS",
+        "targetPropertyId": "3021503672388137315"
+      },
+      {
+        "sourceColumnName": "report_published",
+        "targetPropertyId": "3021503672654185672"
+      },
+      {
+        "sourceColumnName": "REPORT_URL",
+        "targetPropertyId": "3021503671430479854"
+      },
+      {
+        "sourceColumnName": "result",
+        "targetPropertyId": "3021503671352530884"
+      },
+      {
+        "sourceColumnName": "SCORE",
+        "targetPropertyId": "3021503668943570744"
+      },
+      {
+        "sourceColumnName": "PlantRef",
+        "targetPropertyId": "5109646062513636532"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "compliance_audits",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "a4f1c0bb-5f3d-4094-b100-0532bfa22499",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "training_sessions",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "Ties_To_Cert",
+      "targetPropertyId": "5068360561270836794"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "SessionTag",
+      "targetPropertyId": "5072771668226416088"
+    }
+  ]
+}

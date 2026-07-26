@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2600957880442355407",
+  "name": "financial_ledger_to_ppa_contracts",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "145585595776017"
+  },
+  "target": {
+    "entityTypeId": "100299290210877"
+  }
+}

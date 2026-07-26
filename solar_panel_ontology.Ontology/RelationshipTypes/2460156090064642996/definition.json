@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2460156090064642996",
+  "name": "weather_stations_to_asset_manufacturers",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "133902340440258"
+  },
+  "target": {
+    "entityTypeId": "281097493297300"
+  }
+}

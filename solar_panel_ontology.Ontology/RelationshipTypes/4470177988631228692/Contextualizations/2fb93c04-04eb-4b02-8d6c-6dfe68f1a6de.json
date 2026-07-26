@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "2fb93c04-04eb-4b02-8d6c-6dfe68f1a6de",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "energy_tariffs",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "TariffCode",
+      "targetPropertyId": "5119678499478650393"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "For_Contract_Num",
+      "targetPropertyId": "5122066987851211569"
+    }
+  ]
+}

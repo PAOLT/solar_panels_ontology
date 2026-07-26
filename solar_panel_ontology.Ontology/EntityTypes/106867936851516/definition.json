@@ -1,0 +1,171 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "106867936851516",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "spare_parts",
+  "entityIdParts": [
+    "5087037753396570573"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5087037752945131485",
+      "name": "category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The category the spare part belongs to. Possible values: Manufacturer Specific, Safety, Technical.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037754306057373",
+      "name": "created_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the spare part record was created. Example: 2019-01-15 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037752222535669",
+      "name": "DESCRIPTION",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A detailed description of the spare part and its specifications. Example: Entry-level certification for solar PV installers..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037755074679014",
+      "name": "is_hazardous",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. A flag indicating if the part is considered a hazardous material. Possible values: False, True.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037753030286553",
+      "name": "last_modified_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the spare part record. Example: 2023-10-10 10:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037754656016971",
+      "name": "LEAD_TIME_DAYS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The typical number of days it takes to receive the part after ordering. Example: 14.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037755311232231",
+      "name": "Manufacturer_Code",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E asset_manufacturers.MfrCode. The code of the part\u0027s manufacturer. Example: MFR-01.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037751912451730",
+      "name": "min_order_qty",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. The minimum quantity required when ordering this part. Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037754891663785",
+      "name": "part_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The common name of the spare part. Example: Bypass Diode S3.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037753396570573",
+      "name": "PartSKU",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique Stock Keeping Unit (SKU) for a spare part. Example: SP-DI-001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037754131817626",
+      "name": "physical_properties",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Describes the physical characteristics of a spare part, such as its weight and dimensions.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037753045801616",
+      "name": "shelf_life_months",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "BIGINT. The recommended shelf life of the part in months. NULL if indefinite. Possible values: 120.0, 24.0, 36.0, 48.0, 6.0, 60.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037751875840817",
+      "name": "storage_bin",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The physical location (bin number) where the part is stored in the warehouse. Example: A12-3.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5087037754067841295",
+      "name": "UNIT_COST",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The cost of a single unit of the spare part. Example: $15.50.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

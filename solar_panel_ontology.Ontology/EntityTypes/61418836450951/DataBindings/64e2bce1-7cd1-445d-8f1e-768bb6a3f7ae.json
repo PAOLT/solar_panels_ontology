@@ -1,0 +1,81 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "64e2bce1-7cd1-445d-8f1e-768bb6a3f7ae",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "upload_date",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "acknowledgment_date",
+        "targetPropertyId": "1924046751371985131"
+      },
+      {
+        "sourceColumnName": "document_name",
+        "targetPropertyId": "1924046749375727717"
+      },
+      {
+        "sourceColumnName": "document_type",
+        "targetPropertyId": "1924046749320872408"
+      },
+      {
+        "sourceColumnName": "file_size_mb",
+        "targetPropertyId": "1924046749767987006"
+      },
+      {
+        "sourceColumnName": "is_confidential",
+        "targetPropertyId": "1924046749284382381"
+      },
+      {
+        "sourceColumnName": "language_code",
+        "targetPropertyId": "1924046749089740048"
+      },
+      {
+        "sourceColumnName": "manufacturer_acknowledged",
+        "targetPropertyId": "1924046751715740547"
+      },
+      {
+        "sourceColumnName": "ocr_text_extract",
+        "targetPropertyId": "1924046749389800396"
+      },
+      {
+        "sourceColumnName": "page_count",
+        "targetPropertyId": "1924046749891420774"
+      },
+      {
+        "sourceColumnName": "related_email_id",
+        "targetPropertyId": "1924046751787813750"
+      },
+      {
+        "sourceColumnName": "status",
+        "targetPropertyId": "1924046751836623990"
+      },
+      {
+        "sourceColumnName": "storage_path_url",
+        "targetPropertyId": "1924046752259546608"
+      },
+      {
+        "sourceColumnName": "upload_date",
+        "targetPropertyId": "1924046750462378073"
+      },
+      {
+        "sourceColumnName": "uploaded_by",
+        "targetPropertyId": "1924046751420716919"
+      },
+      {
+        "sourceColumnName": "version_number",
+        "targetPropertyId": "1924046749811917619"
+      },
+      {
+        "sourceColumnName": "claim_ref",
+        "targetPropertyId": "1916959175949143535"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "claimappealdocuments",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "75309924523386",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "ticket_resolution_steps",
+  "entityIdParts": [
+    "5134113909934539050"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5134113910877796828",
+      "name": "action_taken_by",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Agent/Tech name.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113911255638234",
+      "name": "action_timestamp",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. When the action occurred. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909560139304",
+      "name": "action_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Category (Reply, Internal Note, Status Change). Unique values: Email Reply, Internal Note, Status Change, Phone Call.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909657441437",
+      "name": "attachment_url",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Link to attached file. **NULL means No attachment.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909335615427",
+      "name": "client_read_receipt",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if client opened the email. **NULL means Internal note.** Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909737777009",
+      "name": "escalation_flag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if this step was an escalation. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113912021893050",
+      "name": "is_public",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if visible to customer. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909993867674",
+      "name": "message_content",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Body of the message or note.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113911793518639",
+      "name": "new_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Status after this step. **NULL means data unavailable.** Unique values: In Progress, Waiting, Resolved.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113910109606816",
+      "name": "previous_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Status before this step. **NULL means data unavailable.** Unique values: New, In Progress.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113912983393197",
+      "name": "response_channel",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Channel used (Email, Portal). Unique values: Email, Portal, Phone.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113913112728349",
+      "name": "sentiment_score",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Sentiment of this specific message. Example: 0.1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909934539050",
+      "name": "step_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique ID for the resolution step.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113911911008306",
+      "name": "step_sequence",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Order of the step (1, 2, 3...). Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909044494962",
+      "name": "system_generated",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if auto-response. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113910133694924",
+      "name": "tags",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. JSON array of tags applied. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113909358592160",
+      "name": "ticket_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK to ClientSupportTickets.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5134113911903618439",
+      "name": "time_spent_minutes",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Minutes logged for this step. Example: 15.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

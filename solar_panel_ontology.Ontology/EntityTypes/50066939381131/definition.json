@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "50066939381131",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "work_order_parts_usage",
+  "entityIdParts": [
+    "5386538995512350971",
+    "5386538997863599328"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5386538995060043530",
+      "name": "COST_AT_TIME",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "REAL. The cost of a single unit of the part at the time it was used. Example: $125.50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5386538995512350971",
+      "name": "PartRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "5386538997422055688",
+      "name": "quantity_used",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BIGINT. The number of units of the part that were used. Example: 1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5386538997863599328",
+      "name": "WorkOrderRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

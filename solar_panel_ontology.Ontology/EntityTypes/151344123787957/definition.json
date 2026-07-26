@@ -1,0 +1,182 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "151344123787957",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "technicians",
+  "entityIdParts": [
+    "5076578758882401660"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5076578757627316645",
+      "name": "contact_phone",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The technician\u0027s contact phone number. Example: (555) 111-2222.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578757722542688",
+      "name": "created_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the technician record was created. Example: 2019-01-15 09:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578755748813323",
+      "name": "EMAIL",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The technician\u0027s company email address. Example: awilliams@solar.co.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578758296850287",
+      "name": "emergency_contact_info",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Contains the name and phone number of a technician\u0027s emergency contact.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578757207611852",
+      "name": "employee_number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The official, unique employee number. Example: E10234.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578755549907706",
+      "name": "employmentStatus",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current employment status of the technician. Possible values: Active, On Leave, Terminated.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578756833242580",
+      "name": "FullName",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The full name of the technician. Example: Alice Williams.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578758550919274",
+      "name": "hire_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the technician was hired. Example: 2019-03-15.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578758065867416",
+      "name": "JOB_TITLE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The official job title of the employee. Possible values: Junior Engineer, Senior Technician, Team Lead, Technician.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578757691825101",
+      "name": "last_modified_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp of the last modification to the technician record. Example: 2023-10-10 10:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578755674043575",
+      "name": "Reports_To_Tech",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E technicians.TechNum. The identifier of the technician\u0027s direct supervisor. Possible values: T-101, T-102, T-103, T-104, T-105, T-106, T-107, T-108, T-109, T-110.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578757260806445",
+      "name": "SPECIALTY",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The primary area of technical expertise for the technician. Possible values: Electrical, General, Inverter, Mechanical, Panel.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578757900880259",
+      "name": "team",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The operational team the technician belongs to. Possible values: Alpha, Bravo, Charlie.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578758882401660",
+      "name": "TechNum",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a technician or employee. Example: T-101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5076578756436562411",
+      "name": "TERMINATION_DATE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. The date the technician\u0027s employment was terminated. NULL if active. Possible values: 2021-12-01, 2022-02-28, 2022-05-20, 2023-01-31, 2023-10-15.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

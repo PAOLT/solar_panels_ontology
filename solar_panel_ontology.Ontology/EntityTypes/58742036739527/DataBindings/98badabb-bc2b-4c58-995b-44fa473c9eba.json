@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "98badabb-bc2b-4c58-995b-44fa473c9eba",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "5107172345334221564"
+      },
+      {
+        "sourceColumnName": "datasheet",
+        "targetPropertyId": "5107172346455051667"
+      },
+      {
+        "sourceColumnName": "Dimensions",
+        "targetPropertyId": "5107172346785308784"
+      },
+      {
+        "sourceColumnName": "EFFICIENCY",
+        "targetPropertyId": "5107172346925763690"
+      },
+      {
+        "sourceColumnName": "EOL_DATE",
+        "targetPropertyId": "5107172344632644337"
+      },
+      {
+        "sourceColumnName": "InverterModelTag",
+        "targetPropertyId": "5107172346797764220"
+      },
+      {
+        "sourceColumnName": "last_modified_ts",
+        "targetPropertyId": "5107172343745805754"
+      },
+      {
+        "sourceColumnName": "MAX_INPUT_VOLTAGE",
+        "targetPropertyId": "5107172343605740180"
+      },
+      {
+        "sourceColumnName": "max_power_kw",
+        "targetPropertyId": "5107172344129889865"
+      },
+      {
+        "sourceColumnName": "modelName",
+        "targetPropertyId": "5107172345114169152"
+      },
+      {
+        "sourceColumnName": "mppt_channels",
+        "targetPropertyId": "5107172347298337900"
+      },
+      {
+        "sourceColumnName": "PRODUCT_LINE",
+        "targetPropertyId": "5107172346269313930"
+      },
+      {
+        "sourceColumnName": "releaseDate",
+        "targetPropertyId": "5107172347722750637"
+      },
+      {
+        "sourceColumnName": "VendorCode",
+        "targetPropertyId": "5107172345978228067"
+      },
+      {
+        "sourceColumnName": "WARRANTY_YEARS",
+        "targetPropertyId": "5107172345210191859"
+      },
+      {
+        "sourceColumnName": "weight_kg",
+        "targetPropertyId": "5107172345231577694"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "inverter_models",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

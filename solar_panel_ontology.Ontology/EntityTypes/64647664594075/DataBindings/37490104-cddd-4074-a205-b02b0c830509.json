@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "37490104-cddd-4074-a205-b02b0c830509",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "assigned_tech_ref",
+        "targetPropertyId": "5131100552022134455"
+      },
+      {
+        "sourceColumnName": "category",
+        "targetPropertyId": "5131100552551745377"
+      },
+      {
+        "sourceColumnName": "client_ref",
+        "targetPropertyId": "5131100552783614578"
+      },
+      {
+        "sourceColumnName": "closed_date",
+        "targetPropertyId": "5131100554418908101"
+      },
+      {
+        "sourceColumnName": "contact_channel",
+        "targetPropertyId": "5131100554105424385"
+      },
+      {
+        "sourceColumnName": "contact_person_name",
+        "targetPropertyId": "5131100553628930288"
+      },
+      {
+        "sourceColumnName": "description_body",
+        "targetPropertyId": "5131100555046910195"
+      },
+      {
+        "sourceColumnName": "is_escalated",
+        "targetPropertyId": "5131100554954808772"
+      },
+      {
+        "sourceColumnName": "last_update_ts",
+        "targetPropertyId": "5131100553204887204"
+      },
+      {
+        "sourceColumnName": "priority",
+        "targetPropertyId": "5131100553330979668"
+      },
+      {
+        "sourceColumnName": "related_invoice_no",
+        "targetPropertyId": "5131100554428454930"
+      },
+      {
+        "sourceColumnName": "resolution_summary",
+        "targetPropertyId": "5131100551438859668"
+      },
+      {
+        "sourceColumnName": "response_time_hours",
+        "targetPropertyId": "5131100551601455420"
+      },
+      {
+        "sourceColumnName": "satisfaction_score",
+        "targetPropertyId": "5131100555332570897"
+      },
+      {
+        "sourceColumnName": "sentiment_analysis_score",
+        "targetPropertyId": "5131100552190839680"
+      },
+      {
+        "sourceColumnName": "sla_deadline",
+        "targetPropertyId": "5131100554127266363"
+      },
+      {
+        "sourceColumnName": "status",
+        "targetPropertyId": "5131100552112216875"
+      },
+      {
+        "sourceColumnName": "subject_line",
+        "targetPropertyId": "5131100552647554294"
+      },
+      {
+        "sourceColumnName": "ticket_id",
+        "targetPropertyId": "5131100554293068354"
+      },
+      {
+        "sourceColumnName": "ticket_open_date",
+        "targetPropertyId": "5131100555239185916"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "clientsupporttickets",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

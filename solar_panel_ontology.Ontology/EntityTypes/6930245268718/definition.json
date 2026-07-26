@@ -1,0 +1,414 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "6930245268718",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "supply_chain_shipments",
+  "entityIdParts": [
+    "5113286970533859383"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5113286970198817979",
+      "name": "actual_arrival_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Actual delivery date. **NULL means In transit.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970886657410",
+      "name": "cargo_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Type of goods being shipped. Unique values: PV Modules, Inverters, Racking System, Transformers, Spare Parts.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970633226587",
+      "name": "carrier_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Logistics company handling transport. Unique values: DHL, Maersk, FedEx Freight, CH Robinson.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286969068640175",
+      "name": "container_number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. ISO Container ID if sea freight. **NULL means Air/Road freight.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286971742682911",
+      "name": "customs_clearance_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. State of import procedures. Unique values: Cleared, Pending, Inspection Required, N/A Domestic.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286971571765154",
+      "name": "damaged_on_arrival",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. True if goods arrived with visible damage. **NULL means Not yet arrived.** Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286972089007856",
+      "name": "declared_value_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Value of goods for insurance/customs. Example: 75000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286968656137138",
+      "name": "destination_plant_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK to plants.sitekey, destination of goods. Unique values: SP9227, SP6740, SP7738.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286971125502468",
+      "name": "expected_arrival_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Planned delivery date.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970548166886",
+      "name": "incoterms",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. International Commercial Terms code. Unique values: DDP, FOB, EXW, CIF.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286972121127586",
+      "name": "insurance_policy_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Cargo insurance policy reference.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286971361638157",
+      "name": "manufacturer_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Sender/Manufacturer of the goods.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286968821963383",
+      "name": "pallet_count",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. Number of pallets/crates. Example: 10.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286972009791541",
+      "name": "receiving_clerk_signature",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Name of person who signed for delivery. **NULL means Not yet delivered.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970405748194",
+      "name": "shipment_create_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Date shipment was booked.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970533859383",
+      "name": "shipment_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique tracking ID for the shipment.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286972401922221",
+      "name": "shipment_status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current status of the cargo. Unique values: Manifested, In Transit, Customs Hold, Delivered.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286969630589431",
+      "name": "shipping_cost_usd",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Cost of transport. Example: 3500.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970950405601",
+      "name": "total_weight_kg",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Gross weight of the shipment. Example: 5000.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5113286970821947499",
+      "name": "tracking_number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Carrier tracking code.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [
+    {
+      "id": "2833801231074765518",
+      "name": "carrier_message",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Raw message from carrier API.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801231273934457",
+      "name": "delay_reason",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Reason if status is Delay. **NULL means On time.** Unique values: Weather, Customs, Traffic.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801229842385704",
+      "name": "estimated_delivery_update",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Revised ETA provided at this step. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801230150079395",
+      "name": "gps_lat",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. GPS Latitude (if live tracking). **NULL means Not available.** Example: 34.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801230261647754",
+      "name": "gps_lon",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. GPS Longitude (if live tracking). **NULL means Not available.** Example: -118.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801228710956230",
+      "name": "hub_facility_code",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Sorting facility ID.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801229941132233",
+      "name": "location_city",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. City where shipment was scanned. Unique values: Shanghai, Los Angeles, Memphis, Rotterdam, Dallas.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801231308216031",
+      "name": "location_country",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Country code. Unique values: CN, US, NL, DE.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801232591793905",
+      "name": "shock_g_force",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Impact force recorded. **NULL means No sensor.** Example: 0.5.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801228898606727",
+      "name": "signed_by",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Name if signed for at this step. **NULL means Not a delivery step.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801231271205099",
+      "name": "status_code",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Carrier status code. Unique values: PU, AR, DP, DL, X.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801232203295579",
+      "name": "status_description",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Readable description (Picked Up, Arrived, Departed). Unique values: Picked Up, Arrived at Facility, Departed Facility, Delivered, Delay.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801231344795676",
+      "name": "temperature_c",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Cargo temp if monitored. **NULL means No sensor.** Example: 20.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801229400383583",
+      "name": "transport_mode",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Mode at this leg (Air, Ocean, Truck). Unique values: Truck, Ocean, Air, Rail.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801229290308545",
+      "name": "update_timestamp",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Time of the status update. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2833801231272206116",
+      "name": "vessel_flight_number",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Vehicle ID. **NULL means data unavailable.**",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "untypedProperties": []
+}

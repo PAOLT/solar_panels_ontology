@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2918290263284582252",
+  "name": "site_inventory_to_plants",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "12880393099422"
+  },
+  "target": {
+    "entityTypeId": "135991112405378"
+  }
+}

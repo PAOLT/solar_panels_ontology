@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5405616212805924108",
+  "name": "spare_parts_to_parts_usage",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "106867936851516"
+  },
+  "target": {
+    "entityTypeId": "50066939381131"
+  }
+}

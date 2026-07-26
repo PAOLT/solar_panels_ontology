@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "2840893370218521459",
+  "name": "battery_storage_units_to_plants",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "111817418412305"
+  },
+  "target": {
+    "entityTypeId": "135991112405378"
+  }
+}

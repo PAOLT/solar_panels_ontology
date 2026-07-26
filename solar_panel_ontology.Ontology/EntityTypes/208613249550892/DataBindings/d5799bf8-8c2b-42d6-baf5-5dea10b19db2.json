@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "d5799bf8-8c2b-42d6-baf5-5dea10b19db2",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "dqscore",
+        "targetPropertyId": "5050203002008518144"
+      },
+      {
+        "sourceColumnName": "inspectdt",
+        "targetPropertyId": "5050203001415581410"
+      },
+      {
+        "sourceColumnName": "inspectmode",
+        "targetPropertyId": "5050203003383490556"
+      },
+      {
+        "sourceColumnName": "inspectres",
+        "targetPropertyId": "5050203000866915290"
+      },
+      {
+        "sourceColumnName": "maintsched",
+        "targetPropertyId": "5050203001303190264"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "inspection",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

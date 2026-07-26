@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "5586685477345744958",
+  "name": "procedure_to_executed_procedure",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "273388742516841"
+  },
+  "target": {
+    "entityTypeId": "129186723565465"
+  }
+}

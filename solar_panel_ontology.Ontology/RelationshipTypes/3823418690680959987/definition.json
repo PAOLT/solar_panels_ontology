@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3823418690680959987",
+  "name": "financial_ledger_to_work_orders",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "145585595776017"
+  },
+  "target": {
+    "entityTypeId": "145752151256458"
+  }
+}

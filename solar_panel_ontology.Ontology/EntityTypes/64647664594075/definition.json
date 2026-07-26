@@ -1,0 +1,237 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "64647664594075",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "client_support_tickets",
+  "entityIdParts": [
+    "5131100554293068354"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "5131100552022134455",
+      "name": "assigned_tech_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK to technicians table (if technical). **NULL means Assigned to Admin/Billing dept.** Unique values: T-101, T-102.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100552551745377",
+      "name": "category",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Type of issue. Unique values: Billing Inquiry, Portal Access, Report Data Discrepancy, Outage Notification, General Info.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100552783614578",
+      "name": "client_ref",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK to clients table.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100554418908101",
+      "name": "closed_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. When the ticket was closed. **NULL means Still open.** Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100554105424385",
+      "name": "contact_channel",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. How the request came in. Unique values: Email, Phone, Web Portal, API.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100553628930288",
+      "name": "contact_person_name",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Name of client representative.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100555046910195",
+      "name": "description_body",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Full details provided by client.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100554954808772",
+      "name": "is_escalated",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "BOOLEAN. Has this been bumped to management?. Possible values: True, False.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100553204887204",
+      "name": "last_update_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Last activity timestamp. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100553330979668",
+      "name": "priority",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Urgency level. Unique values: Low, Normal, High, Critical.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100554428454930",
+      "name": "related_invoice_no",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Linked invoice if billing related. **NULL means Not billing related.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100551438859668",
+      "name": "resolution_summary",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. How the issue was solved. **NULL means Unresolved.**",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100551601455420",
+      "name": "response_time_hours",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "REAL. Time taken to first human response. **NULL means Not yet responded.** Example: 4.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100555332570897",
+      "name": "satisfaction_score",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "INTEGER. CSAT score (1-5) if surveyed. **NULL means No survey taken.** Example: 50.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100552190839680",
+      "name": "sentiment_analysis_score",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. AI score of text sentiment (-1.0 to 1.0). Example: 0.2.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100554127266363",
+      "name": "sla_deadline",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Time by which resolution is required. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100552112216875",
+      "name": "status",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current state of the ticket. Unique values: New, In Progress, Waiting for Customer, Resolved, Closed.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100552647554294",
+      "name": "subject_line",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Brief title of the request.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100554293068354",
+      "name": "ticket_id",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for support requests.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "5131100555239185916",
+      "name": "ticket_open_date",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. When the ticket was created. Example: 2024-01-01 12:00:00.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "untypedProperties": []
+}

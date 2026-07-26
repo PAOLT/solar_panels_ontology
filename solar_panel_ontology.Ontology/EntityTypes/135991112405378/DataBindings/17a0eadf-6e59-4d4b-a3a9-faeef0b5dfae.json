@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "17a0eadf-6e59-4d4b-a3a9-faeef0b5dfae",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "azmdeg",
+        "targetPropertyId": "5109646063119229757"
+      },
+      {
+        "sourceColumnName": "cap_mw",
+        "targetPropertyId": "5109646060476713712"
+      },
+      {
+        "sourceColumnName": "complyflag",
+        "targetPropertyId": "5109646062209266511"
+      },
+      {
+        "sourceColumnName": "docstate",
+        "targetPropertyId": "5109646064040926460"
+      },
+      {
+        "sourceColumnName": "envtag",
+        "targetPropertyId": "5109646062834943771"
+      },
+      {
+        "sourceColumnName": "goliveon",
+        "targetPropertyId": "5109646061006770096"
+      },
+      {
+        "sourceColumnName": "insurstate",
+        "targetPropertyId": "5109646060576436424"
+      },
+      {
+        "sourceColumnName": "modhook",
+        "targetPropertyId": "5109646063499384863"
+      },
+      {
+        "sourceColumnName": "recyclenote",
+        "targetPropertyId": "5109646061409911197"
+      },
+      {
+        "sourceColumnName": "sitekey",
+        "targetPropertyId": "5109646062513636532"
+      },
+      {
+        "sourceColumnName": "sitelabel",
+        "targetPropertyId": "5109646062505481853"
+      },
+      {
+        "sourceColumnName": "tiltdeg",
+        "targetPropertyId": "5109646063479377562"
+      },
+      {
+        "sourceColumnName": "warrclaims",
+        "targetPropertyId": "5109646062088934478"
+      },
+      {
+        "sourceColumnName": "warrstate",
+        "targetPropertyId": "5109646061680408960"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "plants",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

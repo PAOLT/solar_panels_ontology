@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "14336f88-5387-4cff-a1e7-a0ba8a5ca519",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "session_attendance",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "CourseRef",
+      "targetPropertyId": "5072771668226416088"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "AttendeeNum",
+      "targetPropertyId": "5616595352528452656"
+    },
+    {
+      "sourceColumnName": "CourseRef",
+      "targetPropertyId": "5616595354703131786"
+    }
+  ]
+}

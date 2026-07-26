@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3594764402071078439",
+  "name": "supply_chain_shipments_to_asset_manufacturers",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "6930245268718"
+  },
+  "target": {
+    "entityTypeId": "281097493297300"
+  }
+}

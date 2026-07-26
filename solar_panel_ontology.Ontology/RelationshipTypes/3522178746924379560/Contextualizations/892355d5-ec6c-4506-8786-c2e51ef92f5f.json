@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "892355d5-ec6c-4506-8786-c2e51ef92f5f",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "clientsupporttickets",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "client_ref",
+      "targetPropertyId": "5124548798642364431"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "ticket_id",
+      "targetPropertyId": "5131100554293068354"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "1788d932-a01c-4fb9-9cd3-4c50b493f5bf",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "work_order_procedures",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "ProcedureLink",
+      "targetPropertyId": "5080279094599797808"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "ProcedureLink",
+      "targetPropertyId": "5575716115410333509"
+    },
+    {
+      "sourceColumnName": "WorkOrderLink",
+      "targetPropertyId": "5575716113722133371"
+    }
+  ]
+}

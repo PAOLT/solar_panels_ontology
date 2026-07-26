@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "48b16fec-3b4e-4e53-8e45-f16d6eaf92be",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "CLIENT_MGR",
+        "targetPropertyId": "5122066989123869454"
+      },
+      {
+        "sourceColumnName": "ContractNum",
+        "targetPropertyId": "5122066987851211569"
+      },
+      {
+        "sourceColumnName": "contractStatus",
+        "targetPropertyId": "5122066985915320475"
+      },
+      {
+        "sourceColumnName": "CustomerCode",
+        "targetPropertyId": "5122066985750356577"
+      },
+      {
+        "sourceColumnName": "document_url",
+        "targetPropertyId": "5122066986057247191"
+      },
+      {
+        "sourceColumnName": "END_DATE",
+        "targetPropertyId": "5122066986312262899"
+      },
+      {
+        "sourceColumnName": "ESCALATION_RATE_PCT",
+        "targetPropertyId": "5122066985741010598"
+      },
+      {
+        "sourceColumnName": "governingLaw",
+        "targetPropertyId": "5122066986894310225"
+      },
+      {
+        "sourceColumnName": "guaranteed_yield_kwh_yr",
+        "targetPropertyId": "5122066987749302379"
+      },
+      {
+        "sourceColumnName": "LAST_MODIFIED",
+        "targetPropertyId": "5122066987240363841"
+      },
+      {
+        "sourceColumnName": "our_manager",
+        "targetPropertyId": "5122066987734782985"
+      },
+      {
+        "sourceColumnName": "PENALTY_CLAUSE",
+        "targetPropertyId": "5122066988377863377"
+      },
+      {
+        "sourceColumnName": "SIGNED_DATE",
+        "targetPropertyId": "5122066985750696013"
+      },
+      {
+        "sourceColumnName": "SiteRef",
+        "targetPropertyId": "5122066988076002545"
+      },
+      {
+        "sourceColumnName": "start_date",
+        "targetPropertyId": "5122066989417093013"
+      },
+      {
+        "sourceColumnName": "term_months",
+        "targetPropertyId": "5122066988804767770"
+      },
+      {
+        "sourceColumnName": "termination_fee",
+        "targetPropertyId": "5122066986834886690"
+      },
+      {
+        "sourceColumnName": "TOTAL_VALUE",
+        "targetPropertyId": "5122066988372052158"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "ppa_contracts",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

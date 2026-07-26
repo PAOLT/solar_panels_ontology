@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "e62260cc-32df-42f2-85dc-a8d591468d2b",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+    "sourceTableName": "work_orders",
+    "sourceSchema": "solar_panel_large",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "Creator",
+      "targetPropertyId": "5076578758882401660"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "OrderNum",
+      "targetPropertyId": "5083449615180512387"
+    }
+  ]
+}

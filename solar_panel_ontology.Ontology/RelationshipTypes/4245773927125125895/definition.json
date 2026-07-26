@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "4245773927125125895",
+  "name": "plants_to_weather_stations",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "135991112405378"
+  },
+  "target": {
+    "entityTypeId": "133902340440258"
+  }
+}

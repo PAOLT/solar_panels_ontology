@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "57984a75-5c2b-421a-9a16-70f04847caef",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "LAST_CHECKED",
+        "targetPropertyId": "5089782042799280068"
+      },
+      {
+        "sourceColumnName": "last_restock",
+        "targetPropertyId": "5089782043644414047"
+      },
+      {
+        "sourceColumnName": "last_updated_ts",
+        "targetPropertyId": "5089782043778456832"
+      },
+      {
+        "sourceColumnName": "LocationTag",
+        "targetPropertyId": "5089782044463250874"
+      },
+      {
+        "sourceColumnName": "quantity",
+        "targetPropertyId": "5089782045276750487"
+      },
+      {
+        "sourceColumnName": "REORDER_LEVEL",
+        "targetPropertyId": "5089782045154380790"
+      },
+      {
+        "sourceColumnName": "StockItemSKU",
+        "targetPropertyId": "5089782045743349147"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "site_inventory",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}

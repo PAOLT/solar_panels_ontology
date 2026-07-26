@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "cc95dc0b-86e4-477e-9c6f-f19a61e63e60",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "elec_perf_snapshot",
+        "targetPropertyId": "1342247374528503646"
+      },
+      {
+        "sourceColumnName": "env_snapshot",
+        "targetPropertyId": "1316030294798392899"
+      },
+      {
+        "sourceColumnName": "mech_health_snapshot",
+        "targetPropertyId": "1342247376083031497"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "5109646062513636532"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "6cac9629-dcd3-9266-40dd-a934a96b8679",
+      "sourceTableName": "plant_record_snapshots",
+      "sourceSchema": "solar_panel_large"
+    }
+  }
+}
