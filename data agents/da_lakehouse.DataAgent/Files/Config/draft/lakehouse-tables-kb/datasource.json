@@ -1,0 +1,93 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "634f3041-dda1-8e9c-4569-4b7a98d5d039",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": "As the knowledge base, use the solar_panels_knowledge table in the dbo schema. Use only the following columns:\r\n- \"id\": unique identifier of a knowledge item (INT)\r\n- \"knowledge_key\": name of a knowledge item, also a unique identifier (STRING)\r\n- \"knowledge\": the knowledge item\r\nknowledge items are queries by either \"id\" or \"knowledge_key\". \"knowledge\" will be returned.\r\n",
+  "displayName": "kb",
+  "type": "lakehouse_tables",
+  "userDescription": "The dbo schema provides the solar panels knowledge base",
+  "metadata": {},
+  "elements": [
+    {
+      "id": "218afd3c-c66d-41ba-91a8-b93cf5de776c",
+      "is_selected": false,
+      "display_name": "Schemas",
+      "type": "schema_grouping",
+      "description": null,
+      "children": [
+        {
+          "id": "e7069d04-8dd1-45ef-b277-3a1932662f29",
+          "is_selected": false,
+          "display_name": "dbo",
+          "type": "lakehouse_tables.schema",
+          "description": null,
+          "children": [
+            {
+              "id": "b3229509-8168-4676-ac17-b33e35b34cb8",
+              "is_selected": false,
+              "display_name": "Tables",
+              "type": "table_grouping",
+              "description": null,
+              "children": [
+                {
+                  "id": "de17a005-1b20-4bf7-a69c-2d980f4429e6",
+                  "is_selected": true,
+                  "display_name": "solar_panels_knowledge",
+                  "type": "lakehouse_tables.table",
+                  "description": null,
+                  "children": [
+                    {
+                      "id": "4927da81-c354-4822-93c9-967a7ca7e25f",
+                      "is_selected": true,
+                      "display_name": "knowledge_id",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "bigint",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "a89b481e-a442-4489-b575-3fd06538503a",
+                      "is_selected": true,
+                      "display_name": "knowledge_key",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "8a99819d-aee4-48d3-b72b-3cb7ae61a552",
+                      "is_selected": true,
+                      "display_name": "knowledge",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "b0e75d6c-b926-447e-9953-616b04ace235",
+                      "is_selected": true,
+                      "display_name": "type",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    },
+                    {
+                      "id": "08a831c9-0506-41d5-a13d-d7d38321be63",
+                      "is_selected": true,
+                      "display_name": "children_knowledge_id",
+                      "type": "lakehouse_tables.column",
+                      "data_type": "varchar",
+                      "description": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

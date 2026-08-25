@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/fewShots/1.0.0/schema.json",
   "fewShots": [
     {
-      "id": "f24ce0b5-16f7-4be3-a61b-ebdd8c2dcb95",
+      "id": "d4e6404b-ed0b-4410-bcaf-566fedcadd46",
       "question": "Any user prompt....\n\nknowledge: \n- System Unavailability\n- Thermal Loss Factor",
       "query": "select knowledge from birdbench.dbo.solar_panels_kb where knowledge_key = 'System Unavailability' or knowledge_key = 'Thermal Loss Factor'"
     },
     {
-      "id": "59eeb948-aa50-437a-8b73-296d3e5780d2",
+      "id": "cc9d72ae-84fd-42bb-a351-12c51adcbceb",
       "question": "Find the relevant knowledge for System Unavailability and Thermal Loss Factor",
       "query": "select knowledge from birdbench.dbo.solar_panels_kb where knowledge_key = 'System Unavailability' or knowledge_key = 'Thermal Loss Factor'"
     }
