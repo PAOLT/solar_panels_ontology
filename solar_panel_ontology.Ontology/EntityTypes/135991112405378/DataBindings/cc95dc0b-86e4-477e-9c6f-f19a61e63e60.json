@@ -20,6 +20,10 @@
       {
         "sourceColumnName": "sitetie",
         "targetPropertyId": "5109646062513636532"
+      },
+      {
+        "sourceColumnName": "snapkey",
+        "targetPropertyId": "5421251802528150903"
       }
     ],
     "sourceTableProperties": {

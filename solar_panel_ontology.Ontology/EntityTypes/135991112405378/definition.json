@@ -606,6 +606,17 @@
         "description": "REAL. The numerical score of the audit, if applicable. Example: 98.5.",
         "customAttributes": {}
       }
+    },
+    {
+      "id": "5421251802528150903",
+      "name": "snapkey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Snapshot identifier. Unique ID for performance snapshot. Example: PV937101.",
+        "customAttributes": {}
+      }
     }
   ],
   "untypedProperties": []

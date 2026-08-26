@@ -84,26 +84,14 @@ spark.sql(sql_snaps).write.saveAsTable("solar_panel_large.plant_record_snapshots
 
 # CELL ********************
 
-# creating timeseries tables (plant records * alerts)
-
-sql_alerts = ''' 
-SELECT plant_record.*, 
-	alert.alrtstate, 
-	alert.alrtcnt, 
-	alert.maintprio, 
-	alert.replprio,
-	work_orders.OrderNum
-FROM birdbench.solar_panel_large.plant_record
-JOIN birdbench.solar_panel_large.alert ON snapalrt = snapkey
-JOIN birdbench.solar_panel_large.work_orders ON snapalrt = TriggeringAlert
-'''
-
-spark.sql(sql_alerts).write.saveAsTable("solar_panel_large.plant_record_alerts")
+# MAGIC %%sql
+# MAGIC 
+# MAGIC select * from solar_panel_large.plant_record_snapshots
 
 # METADATA ********************
 
 # META {
-# META   "language": "python",
+# META   "language": "sparksql",
 # META   "language_group": "synapse_pyspark"
 # META }
 
@@ -182,6 +170,44 @@ JOIN birdbench.solar_panel_large.operational_metrics ON snapops = snapkey
 '''
 
 spark.sql(sql_oper_metrics).write.saveAsTable("solar_panel_large.plant_record_operational_metrics")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+# MAGIC %%sql
+# MAGIC 
+# MAGIC select * from solar_panel_large.plant_record_operational_metrics
+
+# METADATA ********************
+
+# META {
+# META   "language": "sparksql",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
+# creating timeseries tables (plant records * alerts)
+
+sql_alerts = ''' 
+SELECT plant_record.*, 
+	alert.alrtstate, 
+	alert.alrtcnt, 
+	alert.maintprio, 
+	alert.replprio,
+	work_orders.OrderNum
+FROM birdbench.solar_panel_large.plant_record
+JOIN birdbench.solar_panel_large.alert ON snapalrt = snapkey
+JOIN birdbench.solar_panel_large.work_orders ON snapalrt = TriggeringAlert
+'''
+
+spark.sql(sql_alerts).write.saveAsTable("solar_panel_large.plant_record_alerts")
 
 # METADATA ********************
 
