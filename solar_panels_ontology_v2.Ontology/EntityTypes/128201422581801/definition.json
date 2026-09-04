@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "128201422581801",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "mechanical_condition",
+  "entityIdParts": [
+    "1764822122537940979"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "1764822122537940979",
+      "name": "sitetie",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK \u2192 plants.SiteKey. Links to parent solar plant.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [
+    {
+      "id": "1765902532768013878",
+      "name": "mech_health_snapshot",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Captures tracker status, glass / back-sheet health, electrical connections and cleaning history for a panel string or block at a given snapshot, allowing O\u0026M teams to query a single JSONB field for mechanical diagnostics.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1765902531852187762",
+      "name": "snapts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when snapshot was taken. Example: 43315.51482.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "semanticEnrichment": {
+    "synonyms": [],
+    "description": "Represents a time-stamped mechanical-health snapshot for a solar plant, capturing tracker status, module surface condition, electrical connection integrity, and mount/cleaning history via a single JSONB payload.",
+    "customAttributes": {}
+  },
+  "untypedProperties": []
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "ea6e77bf-0bfe-41f6-85e2-e0c67a8028a8",
+  "dataBindingTable": {
+    "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+    "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+    "sourceTableName": "electrical_performance_snapshot",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "sitetie",
+      "targetPropertyId": "1740328056956480678"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "sitetie",
+      "targetPropertyId": "1744204051947832084"
+    }
+  ]
+}

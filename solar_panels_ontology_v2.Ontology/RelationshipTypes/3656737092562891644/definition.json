@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3656737092562891644",
+  "name": "has_assigned_technician",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "3791837419523360823"
+  },
+  "target": {
+    "entityTypeId": "2954998668974827813"
+  },
+  "semanticEnrichment": {
+    "description": "Links a work order to the technician assigned to carry out the work.",
+    "customAttributes": {}
+  }
+}

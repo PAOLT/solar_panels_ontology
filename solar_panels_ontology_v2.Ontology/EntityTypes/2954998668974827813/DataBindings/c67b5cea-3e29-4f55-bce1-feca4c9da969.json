@@ -1,0 +1,76 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "c67b5cea-3e29-4f55-bce1-feca4c9da969",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "TechNum",
+        "targetPropertyId": "3380173172149925759"
+      },
+      {
+        "sourceColumnName": "employee_number",
+        "targetPropertyId": "2595877842453379613"
+      },
+      {
+        "sourceColumnName": "FullName",
+        "targetPropertyId": "2686802194251681348"
+      },
+      {
+        "sourceColumnName": "JOB_TITLE",
+        "targetPropertyId": "2357352314837144037"
+      },
+      {
+        "sourceColumnName": "team",
+        "targetPropertyId": "3723313377619794307"
+      },
+      {
+        "sourceColumnName": "Reports_To_Tech",
+        "targetPropertyId": "3686362666133768408"
+      },
+      {
+        "sourceColumnName": "hire_date",
+        "targetPropertyId": "3317993586545474416"
+      },
+      {
+        "sourceColumnName": "TERMINATION_DATE",
+        "targetPropertyId": "2559291723382869454"
+      },
+      {
+        "sourceColumnName": "employmentStatus",
+        "targetPropertyId": "2683874127961214023"
+      },
+      {
+        "sourceColumnName": "SPECIALTY",
+        "targetPropertyId": "3236517760171270866"
+      },
+      {
+        "sourceColumnName": "contact_phone",
+        "targetPropertyId": "2912348616461472769"
+      },
+      {
+        "sourceColumnName": "EMAIL",
+        "targetPropertyId": "3491877562560313162"
+      },
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "3080075501278490125"
+      },
+      {
+        "sourceColumnName": "last_modified_ts",
+        "targetPropertyId": "4222236706040756452"
+      },
+      {
+        "sourceColumnName": "emergency_contact_info",
+        "targetPropertyId": "4454261558821340199"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "technicians",
+      "sourceSchema": "dbo"
+    }
+  }
+}

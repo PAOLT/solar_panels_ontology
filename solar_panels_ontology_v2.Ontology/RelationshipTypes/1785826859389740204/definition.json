@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1785826859389740204",
+  "name": "has_operational_metrics",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129483667936663"
+  },
+  "target": {
+    "entityTypeId": "268762682367423"
+  },
+  "semanticEnrichment": {
+    "description": "Links a solar plant to its time-stamped operational-performance snapshots, capturing reliability metrics, maintenance/cleaning/replacement costs, revenue loss, and optimization potential.",
+    "customAttributes": {}
+  }
+}

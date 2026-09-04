@@ -1,0 +1,108 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "da61854b-5ade-a7cc-417f-f49691b690ba",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "solar_panels_ontology_v2",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": null,
+  "elements": [
+    {
+      "id": "plant",
+      "is_selected": true,
+      "display_name": "plant",
+      "type": "ontology.entity",
+      "description": "azmdeg,cap_mw,complyflag,docstate,envtag,goliveon,insurstate,recyclenote,sitekey,sitelabel,tiltdeg,warrclaims,warrstate",
+      "children": []
+    },
+    {
+      "id": "electrical_performance",
+      "is_selected": true,
+      "display_name": "electrical_performance",
+      "type": "ontology.entity",
+      "description": "sitetie,elec_perf_snapshot,snapts",
+      "children": []
+    },
+    {
+      "id": "mechanical_condition",
+      "is_selected": true,
+      "display_name": "mechanical_condition",
+      "type": "ontology.entity",
+      "description": "sitetie,mech_health_snapshot,snapts",
+      "children": []
+    },
+    {
+      "id": "environmental_condition",
+      "is_selected": true,
+      "display_name": "environmental_condition",
+      "type": "ontology.entity",
+      "description": "sitetie,env_snapshot,snapts",
+      "children": []
+    },
+    {
+      "id": "operational_metrics",
+      "is_selected": true,
+      "display_name": "operational_metrics",
+      "type": "ontology.entity",
+      "description": "sitetie,cleancost,maintcost,mtbfh,mttrh,optpot,replcost,revloss,snapts",
+      "children": []
+    },
+    {
+      "id": "panel_model",
+      "is_selected": true,
+      "display_name": "panel_model",
+      "type": "ontology.entity",
+      "description": "degyrrate,effpct,makertag,modkey,nomoptempc,pnlkind,rated_w,tempcoeff",
+      "children": []
+    },
+    {
+      "id": "alert",
+      "is_selected": true,
+      "display_name": "alert",
+      "type": "ontology.entity",
+      "description": "sitetie,alrtcnt,alrtstate,maintprio,replprio,snapts",
+      "children": []
+    },
+    {
+      "id": "inverter_models",
+      "is_selected": true,
+      "display_name": "inverter_models",
+      "type": "ontology.entity",
+      "description": "InverterModelTag,VendorCode,modelName,PRODUCT_LINE,max_power_kw,EFFICIENCY,mppt_channels,MAX_INPUT_VOLTAGE,weight_kg,Dimensions,WARRANTY_YEARS,datasheet,releaseDate,EOL_DATE,created_ts,last_modified_ts",
+      "children": []
+    },
+    {
+      "id": "inverters",
+      "is_selected": true,
+      "display_name": "inverters",
+      "type": "ontology.entity",
+      "description": "SerialNum,SiteLocation,ModelIdentifier,installDate,COMMISSION_DATE,decommission_date,ASSET_STATUS,location_in_plant,firmware_ver,IP_ADDR,LAST_SERVICE,next_service_due,COST,geolocation",
+      "children": []
+    },
+    {
+      "id": "technician",
+      "is_selected": true,
+      "display_name": "technician",
+      "type": "ontology.entity",
+      "description": "TechNum,employee_number,FullName,JOB_TITLE,team,Reports_To_Tech,hire_date,TERMINATION_DATE,employmentStatus,SPECIALTY,contact_phone,EMAIL,created_ts,last_modified_ts,emergency_contact_info",
+      "children": []
+    },
+    {
+      "id": "work_order",
+      "is_selected": true,
+      "display_name": "work_order",
+      "type": "ontology.entity",
+      "description": "OrderNum,PlantRef,TriggeringAlert,AssignedTechnician,Creator,TITLE,description,work_type,STATUS,priority,ROOT_CAUSE,resolution,CREATED_TS,scheduled_start,SCHEDULED_END,actual_start_ts,COMPLETED_TIMESTAMP,costing",
+      "children": []
+    },
+    {
+      "id": "work_order_update",
+      "is_selected": true,
+      "display_name": "work_order_update",
+      "type": "ontology.entity",
+      "description": "UpdateIndex,ReferenceOrder,update_ts,AuthorRef,COMMENT,previousStatus,NEW_STATUS",
+      "children": []
+    }
+  ]
+}

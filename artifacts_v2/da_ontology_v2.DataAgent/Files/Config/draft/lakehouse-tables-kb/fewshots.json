@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/fewShots/1.0.0/schema.json",
+  "fewShots": [
+    {
+      "id": "ce080893-7de1-4837-9bb0-08ec318db4f7",
+      "question": "Any user prompt....\n\nknowledge: \n- System Unavailability\n- Thermal Loss Factor\n",
+      "query": "-- Enter a SQL query that could answer the question using your data\r\nselect knowledge from kb.dbo.solar_panels_knowledge where knowledge_key = 'System Unavailability' or knowledge_key = 'Thermal Loss Factor'\r\n"
+    },
+    {
+      "id": "6a884906-1267-471b-9108-c17b6e130cdf",
+      "question": "Find the relevant knowledge for System Unavailability and Thermal Loss Factor",
+      "query": "-- Enter a SQL query that could answer the question using your data\r\nselect knowledge from kb.dbo.solar_panels_knowledge where knowledge_key = 'System Unavailability' or knowledge_key = 'Thermal Loss Factor'"
+    }
+  ]
+}

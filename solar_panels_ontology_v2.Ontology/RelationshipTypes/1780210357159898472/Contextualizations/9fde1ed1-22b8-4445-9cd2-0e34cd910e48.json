@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "9fde1ed1-22b8-4445-9cd2-0e34cd910e48",
+  "dataBindingTable": {
+    "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+    "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+    "sourceTableName": "environmental_conditions_snapshot",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "sitetie",
+      "targetPropertyId": "1740328056956480678"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "sitetie",
+      "targetPropertyId": "1778048017469424063"
+    }
+  ]
+}

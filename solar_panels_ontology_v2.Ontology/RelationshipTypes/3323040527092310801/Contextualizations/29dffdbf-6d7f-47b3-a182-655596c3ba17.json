@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "29dffdbf-6d7f-47b3-a182-655596c3ba17",
+  "dataBindingTable": {
+    "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+    "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+    "sourceTableName": "work_order_updates",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "UpdateIndex",
+      "targetPropertyId": "2740799137865482222"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "ReferenceOrder",
+      "targetPropertyId": "3524477146158152741"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "5f1c3a70-fd5e-4a58-85d2-0e8e9307022b",
+  "dataBindingTable": {
+    "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+    "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+    "sourceTableName": "inverters",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "SerialNum",
+      "targetPropertyId": "2376626245576804337"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "InverterModelTag",
+      "targetPropertyId": "3863075357099306461"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "2cca4257-39be-40a5-8f49-818a25252f7a",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "mech_health_snapshot",
+        "targetPropertyId": "1765902532768013878"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "1764822122537940979"
+      },
+      {
+        "sourceColumnName": "snapts",
+        "targetPropertyId": "1765902531852187762"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "mechanical_condition_snapshot",
+      "sourceSchema": "dbo"
+    }
+  }
+}

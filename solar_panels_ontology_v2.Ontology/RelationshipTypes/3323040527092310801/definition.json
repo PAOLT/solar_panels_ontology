@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3323040527092310801",
+  "name": "has_work_order",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "4293328935456303136"
+  },
+  "target": {
+    "entityTypeId": "3791837419523360823"
+  },
+  "semanticEnrichment": {
+    "description": "Links a work order update to the work order it pertains to.",
+    "customAttributes": {}
+  }
+}

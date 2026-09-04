@@ -1,0 +1,88 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "180efed2-ee59-430d-82b0-e6fc61d50068",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "OrderNum",
+        "targetPropertyId": "3524477146158152741"
+      },
+      {
+        "sourceColumnName": "PlantRef",
+        "targetPropertyId": "4322837337835797783"
+      },
+      {
+        "sourceColumnName": "TriggeringAlert",
+        "targetPropertyId": "3091922215484925429"
+      },
+      {
+        "sourceColumnName": "AssignedTechnician",
+        "targetPropertyId": "3250936050930396831"
+      },
+      {
+        "sourceColumnName": "Creator",
+        "targetPropertyId": "2640353871392953321"
+      },
+      {
+        "sourceColumnName": "TITLE",
+        "targetPropertyId": "4174399019876613918"
+      },
+      {
+        "sourceColumnName": "description",
+        "targetPropertyId": "4089437374916946978"
+      },
+      {
+        "sourceColumnName": "work_type",
+        "targetPropertyId": "4172877800581850603"
+      },
+      {
+        "sourceColumnName": "STATUS",
+        "targetPropertyId": "3791784330150101399"
+      },
+      {
+        "sourceColumnName": "priority",
+        "targetPropertyId": "3881466491044831265"
+      },
+      {
+        "sourceColumnName": "ROOT_CAUSE",
+        "targetPropertyId": "2796137686584832046"
+      },
+      {
+        "sourceColumnName": "resolution",
+        "targetPropertyId": "2848915766248560492"
+      },
+      {
+        "sourceColumnName": "CREATED_TS",
+        "targetPropertyId": "2746187712343955399"
+      },
+      {
+        "sourceColumnName": "scheduled_start",
+        "targetPropertyId": "2849235162259120217"
+      },
+      {
+        "sourceColumnName": "SCHEDULED_END",
+        "targetPropertyId": "2556894628958776056"
+      },
+      {
+        "sourceColumnName": "actual_start_ts",
+        "targetPropertyId": "2517815389395307997"
+      },
+      {
+        "sourceColumnName": "COMPLETED_TIMESTAMP",
+        "targetPropertyId": "2479176582367620979"
+      },
+      {
+        "sourceColumnName": "costing",
+        "targetPropertyId": "3513982129471062417"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "work_orders",
+      "sourceSchema": "dbo"
+    }
+  }
+}

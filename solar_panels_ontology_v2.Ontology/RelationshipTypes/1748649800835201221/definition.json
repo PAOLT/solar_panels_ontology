@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1748649800835201221",
+  "name": "has_electrical_performance",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129483667936663"
+  },
+  "target": {
+    "entityTypeId": "280935951081861"
+  },
+  "semanticEnrichment": {
+    "description": "Links a solar plant to its time-stamped electrical-performance snapshots, capturing IV-curve parameters, inverter and grid metrics, efficiency losses, and energy-yield KPIs.",
+    "customAttributes": {}
+  }
+}

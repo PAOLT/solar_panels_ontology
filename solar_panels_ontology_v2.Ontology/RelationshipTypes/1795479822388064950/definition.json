@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1795479822388064950",
+  "name": "has_panel_model",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129483667936663"
+  },
+  "target": {
+    "entityTypeId": "123685726551777"
+  },
+  "semanticEnrichment": {
+    "description": "Links a solar plant to the solar panel model installed at that site, via the plant\u0027s panel-model foreign key.",
+    "customAttributes": {}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "abea3e54-cb37-4b71-8c38-1b946214c544",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "1783108366693518782"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "operational_metrics_snapshot",
+      "sourceSchema": "dbo"
+    }
+  }
+}

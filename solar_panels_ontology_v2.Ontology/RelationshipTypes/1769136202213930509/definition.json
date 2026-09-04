@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1769136202213930509",
+  "name": "has_mechanical_condition",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129483667936663"
+  },
+  "target": {
+    "entityTypeId": "128201422581801"
+  },
+  "semanticEnrichment": {
+    "description": "Links a solar plant to its time-stamped mechanical-condition snapshots, capturing tracker status, module surface condition, electrical connection integrity, and mount/cleaning history.",
+    "customAttributes": {}
+  }
+}

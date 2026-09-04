@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "a24cae7d-7287-4e62-ab9a-b9d5e8f490dc",
+  "dataBindingTable": {
+    "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+    "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+    "sourceTableName": "plants",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "sitekey",
+      "targetPropertyId": "1740328056956480678"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "modhook",
+      "targetPropertyId": "1793973623171263100"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "3fd80d1a-411d-46bb-a6bc-e1e5203cbd87",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "degyrrate",
+        "targetPropertyId": "1793973621748550979"
+      },
+      {
+        "sourceColumnName": "effpct",
+        "targetPropertyId": "1793973621808676833"
+      },
+      {
+        "sourceColumnName": "makertag",
+        "targetPropertyId": "1793973623182506398"
+      },
+      {
+        "sourceColumnName": "modkey",
+        "targetPropertyId": "1793973623171263100"
+      },
+      {
+        "sourceColumnName": "nomoptempc",
+        "targetPropertyId": "1793973625512167869"
+      },
+      {
+        "sourceColumnName": "pnlkind",
+        "targetPropertyId": "1793973624914172975"
+      },
+      {
+        "sourceColumnName": "rated_w",
+        "targetPropertyId": "1793973625746657383"
+      },
+      {
+        "sourceColumnName": "tempcoeff",
+        "targetPropertyId": "1793973621969373996"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "panel_models",
+      "sourceSchema": "dbo"
+    }
+  }
+}

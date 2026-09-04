@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "3f161129-7578-4cb7-b03b-1bc6476b5587",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "elec_perf_snapshot",
+        "targetPropertyId": "1746582354964607921"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "1744204051947832084"
+      },
+      {
+        "sourceColumnName": "snapts",
+        "targetPropertyId": "1746582353296593108"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "electrical_performance_snapshot",
+      "sourceSchema": "dbo"
+    }
+  }
+}

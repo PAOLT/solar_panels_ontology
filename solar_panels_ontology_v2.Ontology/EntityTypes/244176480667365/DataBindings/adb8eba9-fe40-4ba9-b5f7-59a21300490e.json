@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "adb8eba9-fe40-4ba9-b5f7-59a21300490e",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "env_snapshot",
+        "targetPropertyId": "1778835500133206533"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "1778048017469424063"
+      },
+      {
+        "sourceColumnName": "snapts",
+        "targetPropertyId": "1778835500175493962"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "environmental_conditions_snapshot",
+      "sourceSchema": "dbo"
+    }
+  }
+}

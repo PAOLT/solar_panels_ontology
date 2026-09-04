@@ -1,0 +1,99 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "4293328935456303136",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "work_order_update",
+  "entityIdParts": [
+    "2740799137865482222"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "2740799137865482222",
+      "name": "UpdateIndex",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. Unique identifier for a single update to a work order. Example: 1.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3857307135932707977",
+      "name": "ReferenceOrder",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E work_orders.OrderNum. The work order this update pertains to. Example: WO-1001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4194937444052192948",
+      "name": "update_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the update was made. Example: 05/10/2023 09:15 AM.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4308745275346015319",
+      "name": "AuthorRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E technicians.TechNum. The technician who made the update. Example: T-101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4003506852059425920",
+      "name": "COMMENT",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A text comment describing the update. Example: New order created from alert PV937101..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2915077439706614406",
+      "name": "previousStatus",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The status of the work order before this update. Possible values: In Progress, Open.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3591565434938860102",
+      "name": "NEW_STATUS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The status of the work order after this update. Possible values: Cancelled, Closed, In Progress, Open.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [],
+    "description": "Represents a single status/comment update logged against a work order, capturing the author, timestamp, comment, and status transition.",
+    "customAttributes": {}
+  },
+  "untypedProperties": []
+}

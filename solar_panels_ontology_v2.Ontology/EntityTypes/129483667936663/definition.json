@@ -1,0 +1,165 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "129483667936663",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "plant",
+  "entityIdParts": [
+    "1740328056956480678"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "1740328055620776736",
+      "name": "azmdeg",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Panel orientation relative to true north. Example: 169.8.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328057961261853",
+      "name": "cap_mw",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Total installed capacity in megawatts. Example: 257.58.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328055078645154",
+      "name": "complyflag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Compliance status with regulations. Possible values: Compliant, Non-Compliant, Under Review.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328055208914587",
+      "name": "docstate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Completeness status of plant documentation. Possible values: Complete, Missing, Partial.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328054441556862",
+      "name": "envtag",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Environmental impact classification. Possible values: High, Low, Medium.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328055014439651",
+      "name": "goliveon",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "DATE. Date when the plant became operational. Example: 43159.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328057856899918",
+      "name": "insurstate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current insurance coverage status. Possible values: Covered, Expired, Partial.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328058041814300",
+      "name": "recyclenote",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Status of panel recycling program. NULL means the encoder does not report status or data are missing. Possible values: Available, In Development.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328056956480678",
+      "name": "sitekey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for the solar power plant. Example: SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328056392425495",
+      "name": "sitelabel",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Name or description of the solar facility. Example: Solar Plant West Davidport.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328054877887774",
+      "name": "tiltdeg",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double",
+      "semanticEnrichment": {
+        "description": "REAL. Angle of panel tilt from horizontal. Example: 1.2.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328058268996407",
+      "name": "warrclaims",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt",
+      "semanticEnrichment": {
+        "description": "BIGINT. Number of warranty claims made. NULL means the encoder does not report status or data are missing. Possible values: 0.0, 1.0, 2.0, 3.0, 4.0, 5.0.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "1740328054510335460",
+      "name": "warrstate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Current status of equipment warranty. NULL means the encoder does not report status or data are missing. Possible values: Active, Claimed, Expired.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [],
+    "description": "Represents a solar power plant/facility: its identity and installed capacity, panel orientation and tilt, operational start date, and current recycling, documentation, warranty, insurance, compliance, and environmental-impact status.",
+    "customAttributes": {}
+  },
+  "untypedProperties": []
+}

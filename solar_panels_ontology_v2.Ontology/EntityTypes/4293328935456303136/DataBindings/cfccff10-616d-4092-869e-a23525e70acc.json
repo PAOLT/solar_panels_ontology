@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "cfccff10-616d-4092-869e-a23525e70acc",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "UpdateIndex",
+        "targetPropertyId": "2740799137865482222"
+      },
+      {
+        "sourceColumnName": "ReferenceOrder",
+        "targetPropertyId": "3857307135932707977"
+      },
+      {
+        "sourceColumnName": "update_ts",
+        "targetPropertyId": "4194937444052192948"
+      },
+      {
+        "sourceColumnName": "AuthorRef",
+        "targetPropertyId": "4308745275346015319"
+      },
+      {
+        "sourceColumnName": "COMMENT",
+        "targetPropertyId": "4003506852059425920"
+      },
+      {
+        "sourceColumnName": "previousStatus",
+        "targetPropertyId": "2915077439706614406"
+      },
+      {
+        "sourceColumnName": "NEW_STATUS",
+        "targetPropertyId": "3591565434938860102"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "work_order_updates",
+      "sourceSchema": "dbo"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1827743494734677835",
+  "name": "has_alert",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129483667936663"
+  },
+  "target": {
+    "entityTypeId": "70021409499487"
+  },
+  "semanticEnrichment": {
+    "description": "Links a solar plant to its time-stamped alert snapshots, capturing the count and severity of active alerts along with maintenance and replacement priority levels.",
+    "customAttributes": {}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Ontology",
+    "displayName": "solar_panels_ontology_v2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "da61854b-5ade-a7cc-417f-f49691b690ba"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "a2941989-8a1d-4e31-af2f-b78319733182",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "cleancost",
+        "targetPropertyId": "1784348661524624256"
+      },
+      {
+        "sourceColumnName": "maintcost",
+        "targetPropertyId": "1784348662476230096"
+      },
+      {
+        "sourceColumnName": "mtbfh",
+        "targetPropertyId": "1784348661984793731"
+      },
+      {
+        "sourceColumnName": "mttrh",
+        "targetPropertyId": "1784348663917572458"
+      },
+      {
+        "sourceColumnName": "optpot",
+        "targetPropertyId": "1784348660782145790"
+      },
+      {
+        "sourceColumnName": "replcost",
+        "targetPropertyId": "1784348663939619668"
+      },
+      {
+        "sourceColumnName": "revloss",
+        "targetPropertyId": "1784348660980359283"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "1783108366693518782"
+      },
+      {
+        "sourceColumnName": "snapts",
+        "targetPropertyId": "1784348662610531119"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "operational_metrics_snapshot",
+      "sourceSchema": "dbo"
+    }
+  }
+}

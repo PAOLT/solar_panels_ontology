@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "3039824153713864200",
+  "name": "has_author",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "4293328935456303136"
+  },
+  "target": {
+    "entityTypeId": "2954998668974827813"
+  },
+  "semanticEnrichment": {
+    "description": "Links a work order update to the technician who authored it.",
+    "customAttributes": {}
+  }
+}

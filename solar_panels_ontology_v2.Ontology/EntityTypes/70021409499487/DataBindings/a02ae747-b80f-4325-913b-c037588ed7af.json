@@ -1,0 +1,41 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "a02ae747-b80f-4325-913b-c037588ed7af",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "snapts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "alrtcnt",
+        "targetPropertyId": "1822234257990163676"
+      },
+      {
+        "sourceColumnName": "alrtstate",
+        "targetPropertyId": "1822234260596476225"
+      },
+      {
+        "sourceColumnName": "maintprio",
+        "targetPropertyId": "1822234257990989828"
+      },
+      {
+        "sourceColumnName": "replprio",
+        "targetPropertyId": "1822234258433754743"
+      },
+      {
+        "sourceColumnName": "sitetie",
+        "targetPropertyId": "1825482366896633948"
+      },
+      {
+        "sourceColumnName": "snapts",
+        "targetPropertyId": "1822234259431675643"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "alerts",
+      "sourceSchema": "dbo"
+    }
+  }
+}

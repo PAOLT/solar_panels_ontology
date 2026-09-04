@@ -1,0 +1,68 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "77556a45-ef45-4b42-a5aa-5fa5755a33bb",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "azmdeg",
+        "targetPropertyId": "1740328055620776736"
+      },
+      {
+        "sourceColumnName": "cap_mw",
+        "targetPropertyId": "1740328057961261853"
+      },
+      {
+        "sourceColumnName": "complyflag",
+        "targetPropertyId": "1740328055078645154"
+      },
+      {
+        "sourceColumnName": "docstate",
+        "targetPropertyId": "1740328055208914587"
+      },
+      {
+        "sourceColumnName": "envtag",
+        "targetPropertyId": "1740328054441556862"
+      },
+      {
+        "sourceColumnName": "goliveon",
+        "targetPropertyId": "1740328055014439651"
+      },
+      {
+        "sourceColumnName": "insurstate",
+        "targetPropertyId": "1740328057856899918"
+      },
+      {
+        "sourceColumnName": "recyclenote",
+        "targetPropertyId": "1740328058041814300"
+      },
+      {
+        "sourceColumnName": "sitekey",
+        "targetPropertyId": "1740328056956480678"
+      },
+      {
+        "sourceColumnName": "sitelabel",
+        "targetPropertyId": "1740328056392425495"
+      },
+      {
+        "sourceColumnName": "tiltdeg",
+        "targetPropertyId": "1740328054877887774"
+      },
+      {
+        "sourceColumnName": "warrclaims",
+        "targetPropertyId": "1740328058268996407"
+      },
+      {
+        "sourceColumnName": "warrstate",
+        "targetPropertyId": "1740328054510335460"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "plants",
+      "sourceSchema": "dbo"
+    }
+  }
+}

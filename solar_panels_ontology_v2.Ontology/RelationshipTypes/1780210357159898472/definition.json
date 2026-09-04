@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "1780210357159898472",
+  "name": "has_environmental_condition",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "129483667936663"
+  },
+  "target": {
+    "entityTypeId": "244176480667365"
+  },
+  "semanticEnrichment": {
+    "description": "Links a solar plant to its time-stamped environmental-conditions snapshots, capturing ambient weather, irradiance, atmospheric, and wind/rain/snow measurements.",
+    "customAttributes": {}
+  }
+}

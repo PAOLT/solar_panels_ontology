@@ -1,0 +1,220 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "3791837419523360823",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "work_order",
+  "entityIdParts": [
+    "3524477146158152741"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Custom",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "3524477146158152741",
+      "name": "OrderNum",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. Unique identifier for a work order. Example: WO-1001.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4322837337835797783",
+      "name": "PlantRef",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E plants.sitekey. The plant where the work is to be performed. Example: SP9227.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3091922215484925429",
+      "name": "TriggeringAlert",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E alert.snapalrt. The alert that triggered this work order, if any. Example: PV937101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3250936050930396831",
+      "name": "AssignedTechnician",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E technicians.TechNum. The technician assigned to the work order. Example: T-101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2640353871392953321",
+      "name": "Creator",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. FK -\u003E technicians.TechNum. The person who created the work order. Example: T-101.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4174399019876613918",
+      "name": "TITLE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A brief, descriptive title for the work order. Example: Inverter Fan Failure Alert.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4089437374916946978",
+      "name": "description",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A detailed description of the issue or task. Example: Visual and functional check of all central inverters.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "4172877800581850603",
+      "name": "work_type",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The classification of the work. Possible values: Corrective, Emergency, Preventive.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3791784330150101399",
+      "name": "STATUS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The current status of the work order. Possible values: Completed, In Progress, Registered.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3881466491044831265",
+      "name": "priority",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. The priority level of the work order. Possible values: Critical, High, Low, Medium.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2796137686584832046",
+      "name": "ROOT_CAUSE",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A description of the root cause of the issue, filled upon completion. Example: Fan motor seizure due to dust ingress..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2848915766248560492",
+      "name": "resolution",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "TEXT. A summary of the resolution and actions taken, filled upon completion. Example: Replaced fan assembly model FN-001. System back online..",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2746187712343955399",
+      "name": "CREATED_TS",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. Timestamp when the work order was created. Example: 2023/05/10 09:15:22 AM.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2849235162259120217",
+      "name": "scheduled_start",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. The planned start time for the work. Example: 2023/05/11 08:00:00 AM.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2556894628958776056",
+      "name": "SCHEDULED_END",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. The planned end time for the work. Example: 2023/05/11 12:00:00 PM.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2517815389395307997",
+      "name": "actual_start_ts",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. The actual time the work began. Example: 2023/05/11 08:30:15 AM.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "2479176582367620979",
+      "name": "COMPLETED_TIMESTAMP",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime",
+      "semanticEnrichment": {
+        "description": "TIMESTAMP. The actual time the work was completed. Example: 2023/05/11 10:45:50 AM.",
+        "customAttributes": {}
+      }
+    },
+    {
+      "id": "3513982129471062417",
+      "name": "costing",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String",
+      "semanticEnrichment": {
+        "description": "JSONB column. Provides a breakdown of the costs associated with a work order, including estimated, labor, and parts costs.",
+        "customAttributes": {}
+      }
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [],
+    "description": "Represents a maintenance or corrective work order raised for a solar plant, capturing its trigger, assigned technician, creator, classification, status, root cause/resolution, schedule, and cost breakdown.",
+    "customAttributes": {}
+  },
+  "untypedProperties": []
+}

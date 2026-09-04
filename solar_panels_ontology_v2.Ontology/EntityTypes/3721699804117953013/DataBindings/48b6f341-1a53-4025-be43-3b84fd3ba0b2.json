@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "48b6f341-1a53-4025-be43-3b84fd3ba0b2",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "InverterModelTag",
+        "targetPropertyId": "3863075357099306461"
+      },
+      {
+        "sourceColumnName": "VendorCode",
+        "targetPropertyId": "2680176187555242047"
+      },
+      {
+        "sourceColumnName": "modelName",
+        "targetPropertyId": "3794703316740553683"
+      },
+      {
+        "sourceColumnName": "PRODUCT_LINE",
+        "targetPropertyId": "3970425853183914501"
+      },
+      {
+        "sourceColumnName": "max_power_kw",
+        "targetPropertyId": "3532576639346534635"
+      },
+      {
+        "sourceColumnName": "EFFICIENCY",
+        "targetPropertyId": "3685782024730882609"
+      },
+      {
+        "sourceColumnName": "mppt_channels",
+        "targetPropertyId": "2863123075670744280"
+      },
+      {
+        "sourceColumnName": "MAX_INPUT_VOLTAGE",
+        "targetPropertyId": "3091239260028157588"
+      },
+      {
+        "sourceColumnName": "weight_kg",
+        "targetPropertyId": "3549061079684448410"
+      },
+      {
+        "sourceColumnName": "Dimensions",
+        "targetPropertyId": "2733622284402901090"
+      },
+      {
+        "sourceColumnName": "WARRANTY_YEARS",
+        "targetPropertyId": "2371087677217689616"
+      },
+      {
+        "sourceColumnName": "datasheet",
+        "targetPropertyId": "2570652135405456052"
+      },
+      {
+        "sourceColumnName": "releaseDate",
+        "targetPropertyId": "2472677370820375802"
+      },
+      {
+        "sourceColumnName": "EOL_DATE",
+        "targetPropertyId": "2455349885205753275"
+      },
+      {
+        "sourceColumnName": "created_ts",
+        "targetPropertyId": "3050200230954842943"
+      },
+      {
+        "sourceColumnName": "last_modified_ts",
+        "targetPropertyId": "4148814790745299552"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "inverter_models",
+      "sourceSchema": "dbo"
+    }
+  }
+}

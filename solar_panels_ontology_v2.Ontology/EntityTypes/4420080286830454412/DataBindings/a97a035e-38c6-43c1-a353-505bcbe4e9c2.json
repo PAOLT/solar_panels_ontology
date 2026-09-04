@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "a97a035e-38c6-43c1-a353-505bcbe4e9c2",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "SerialNum",
+        "targetPropertyId": "2376626245576804337"
+      },
+      {
+        "sourceColumnName": "SiteLocation",
+        "targetPropertyId": "4278252941601474079"
+      },
+      {
+        "sourceColumnName": "ModelIdentifier",
+        "targetPropertyId": "3582152136919865860"
+      },
+      {
+        "sourceColumnName": "installDate",
+        "targetPropertyId": "4327372464678576084"
+      },
+      {
+        "sourceColumnName": "COMMISSION_DATE",
+        "targetPropertyId": "4316022918978060038"
+      },
+      {
+        "sourceColumnName": "decommission_date",
+        "targetPropertyId": "4347824738520606531"
+      },
+      {
+        "sourceColumnName": "ASSET_STATUS",
+        "targetPropertyId": "3526402086290550401"
+      },
+      {
+        "sourceColumnName": "location_in_plant",
+        "targetPropertyId": "2804726531743125941"
+      },
+      {
+        "sourceColumnName": "firmware_ver",
+        "targetPropertyId": "2341666332376206304"
+      },
+      {
+        "sourceColumnName": "IP_ADDR",
+        "targetPropertyId": "3226688987861010815"
+      },
+      {
+        "sourceColumnName": "LAST_SERVICE",
+        "targetPropertyId": "2733564941032728289"
+      },
+      {
+        "sourceColumnName": "next_service_due",
+        "targetPropertyId": "3377481516066239106"
+      },
+      {
+        "sourceColumnName": "COST",
+        "targetPropertyId": "4107416553648686594"
+      },
+      {
+        "sourceColumnName": "geolocation",
+        "targetPropertyId": "3411122946260955807"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "d8ed0771-df93-4eaa-8c89-33e2dc66b11c",
+      "itemId": "fed084ca-3f3c-4a20-8d46-29cfe5366d11",
+      "sourceTableName": "inverters",
+      "sourceSchema": "dbo"
+    }
+  }
+}

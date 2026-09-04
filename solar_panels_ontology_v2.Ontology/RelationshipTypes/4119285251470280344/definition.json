@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "4119285251470280344",
+  "name": "has_plant",
+  "namespaceType": "Custom",
+  "source": {
+    "entityTypeId": "3791837419523360823"
+  },
+  "target": {
+    "entityTypeId": "129483667936663"
+  },
+  "semanticEnrichment": {
+    "description": "Links a work order to the solar plant where the work is to be performed.",
+    "customAttributes": {}
+  }
+}
